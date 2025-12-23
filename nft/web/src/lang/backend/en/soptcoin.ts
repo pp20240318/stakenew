@@ -1,0 +1,16 @@
+export default {
+    id: 'id',
+    icon: 'icon',
+    name: 'name',
+    code: 'code',
+    realname: 'realname',
+    type: 'type',
+    'type 1': 'type 1',
+    'type 2': 'type 2',
+    status: 'status',
+    'status 1': 'status 1',
+    'status 2': 'status 2',
+    created_at: 'created_at',
+    updated_at: 'updated_at',
+    'quick Search Fields': 'id',
+}

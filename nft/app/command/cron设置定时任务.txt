@@ -1,0 +1,2 @@
+ cd stakenew/nft 
+  php think settle:orders 

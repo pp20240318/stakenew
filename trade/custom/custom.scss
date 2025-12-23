@@ -1,0 +1,67 @@
+/* 导入 Remix Icon */
+@import "/static/css/remixicon/remixicon.css";
+
+/* 自定义样式 */
+
+/* 统一返回按钮样式 */
+.back-btn {
+	width: 60rpx;
+	height: 60rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.back-icon {
+	width: 40rpx;
+	height: 40rpx;
+}
+
+/* 组件演示列表 */
+.gui-components-list{
+	padding:5rpx 30rpx;
+}
+.gui-components-list-title{
+	padding:32rpx 0;
+	font-size:30rpx;
+}
+.gui-components-list-text{
+	font-size:34rpx;
+}
+.gui-components-list-icon{
+	font-size:38rpx;
+}
+
+/* 动态渐变头部导航 */
+.custom-header-bg{background-color:rgba(0, 0, 0, 0.6);}
+
+/* 切换导航样式 */
+.custom-switch-nav-border{border-color:#FF0036 !important;}
+
+
+/* 深色模式 */
+/* #ifndef APP-NVUE */
+@media (prefers-color-scheme: dark){
+	.custom-switch-nav-border{border-color:#888888 !important;}
+}
+/* #endif */
+
+/* 登录页语言选择器样式覆盖 */
+.login .langbutt .gui-primary-text,
+.login .langbutt .gui-select-menu-title .gui-primary-text,
+.login .langbutt .gui-select-menu-title text,
+.langbutt .gui-primary-text {
+	color: #40DFBF !important;
+}
+
+/* 语言选择下拉菜单样式 */
+.login .gui-select-menu,
+.login .gui-select-menus,
+.login .gui-bg-white,
+.login .gui-dark-bg-level-3 {
+	background-color: #2C2C2C !important;
+}
+
+.login .gui-select-menus .gui-primary-text {
+	color: #FFFFFF !important;
+}

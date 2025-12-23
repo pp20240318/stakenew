@@ -1,0 +1,20 @@
+{
+    "所有市场": "All Markets",
+    "名称": "Name",
+    "最新价": "Latest Price",
+    "24h涨跌": "24h Change",
+    "加载中...": "Loading...",
+    "获取数据失败": "Failed to get data",
+    "无法从CoinGecko获取市场数据，请确认您的网络连接正常。如果频繁出现此问题，这可能是由于直接API访问受限。": "Unable to get market data from CoinGecko. Please check your network connection. If this problem occurs frequently, it may be due to direct API access restrictions.",
+    "重试": "Retry",
+    "没有获取到市场数据": "No market data received",
+    "获取市场数据失败，请稍后重试": "Failed to get market data, please try again later",
+    "正在刷新...": "Refreshing...",
+    "搜索功能开发中": "Search function under development",
+    "热门币种": "Popular Coins",
+    "查看全部": "View All",
+    "热门": "Hot",
+    "涨幅榜": "Gainers",
+    "跌幅榜": "Losers",
+    "交易量": "Volume"
+} 

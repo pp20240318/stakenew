@@ -1,0 +1,258 @@
+.con4 {
+    padding: 5px;
+    border: 1px solid #a4e6fc;
+    border-radius: 7px;
+    margin: 10px 15px 0
+}
+
+.con4 .imgs {
+    width: 18px;
+    vertical-align: middle
+}
+
+.con4 .text1 {
+    font-size: 14px;
+    color: #03758c;
+    margin: 0 5px
+}
+
+.con4 .text2 {
+    font-size: 12px;
+    color: #28b6d3
+}
+
+.Statistics2 .list2 {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 6px
+}
+
+.Statistics2 .list2 .line1 .imgs {
+    width: 20px
+}
+
+.Statistics2 .list2 .line1 .text {
+    padding: 0 10px
+}
+
+.Statistics2 .list2:first-child,.Statistics2 .list2:nth-child(3) {
+    background: url(../../static/img/bg_6.95b814ef.png) no-repeat 50%;
+    color: #df7a7e
+}
+
+.Statistics2 .list2:nth-child(2),.Statistics2 .list2:nth-child(4) {
+    background: url(../../static/img/bg_5.365c8ad7.png) no-repeat 50%;
+    color: #9fa4ff
+}
+
+.bg {
+    background-color: #253341;
+    min-height: 100vh;
+    width: 100%;
+    padding-bottom: 40px
+}
+
+.mineView {
+    background-size: 100% 100%
+}
+
+.mineView .headimg {
+    width: 100%
+}
+
+.mineView .headView {
+    padding-top: 10px
+}
+
+.mineView .headView .infoBgView {
+    margin-left: 30px
+}
+
+.mineView .headView .infoBgView .nick_name {
+    margin-left: 5px;
+    font-family: Microsoft YaHei;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px
+}
+
+.mineView .headView .infoBgView .login_title {
+    font-weight: 700;
+    color: #fff;
+    font-size: 20px
+}
+
+.mineView .headView .infoBgView .imgs {
+    width: 25px;
+    margin-right: 10px
+}
+
+.mineView .headView .withdraw_BgView {
+    margin: 5px 15px;
+    background-size: 100%;
+    border-radius: 16px
+}
+
+.mineView .headView .withdraw_BgView .withdrawNumberView {
+    margin-left: 20px
+}
+
+.mineView .headView .withdraw_BgView .withdrawNumberView .textb {
+    color: #fff;
+    margin-bottom: 5px;
+    font-weight: 700
+}
+
+.mineView .headView .withdraw_BgView .depositView {
+    display: flex;
+    margin: 0;
+    height: 52px;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 0 10px
+}
+
+.mineView .headView .withdraw_BgView .depositView .textb {
+    width: 48%;
+    background-size: 100%!important
+}
+
+.mineView .headView .withdraw_BgView .depositView .textb .text {
+    padding: 10px 0;
+    font-weight: 700;
+    font-size: 15px
+}
+
+.mineView .headView .withdraw_BgView .depositView .textb:first-child {
+    background: url(../../static/img/btn_1.8ae94794.png) no-repeat 50%
+}
+
+.mineView .headView .withdraw_BgView .depositView .textb:first-child .text {
+    color: #008755
+}
+
+.mineView .headView .withdraw_BgView .depositView .textb:nth-child(2) {
+    background: url(../../static/img/btn_2.cba124cd.png) no-repeat 50%
+}
+
+.mineView .headView .withdraw_BgView .depositView .textb:nth-child(2) .text {
+    color: #af8b00
+}
+
+.Statistics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    margin: -5px 0;
+    font-weight: 700
+}
+
+.Statistics .left {
+    width: 49%
+}
+
+.Statistics .left .list:first-child {
+    background: url(../../static/img/bg_6.95b814ef.png) no-repeat 50%
+}
+
+.Statistics .left .list:first-child .line2 .text1,.Statistics .left .list:first-child .text {
+    color: #df7a7e
+}
+
+.Statistics .left .list:first-child .line2 .text2 {
+    color: rgba(223,122,126,.5019607843137255)
+}
+
+.Statistics .left .list:nth-child(2) {
+    background: url(../../static/img/bg_5.365c8ad7.png) no-repeat 50%
+}
+
+.Statistics .left .list:nth-child(2) .line2 .text1,.Statistics .left .list:nth-child(2) .text {
+    color: #9fa4ff
+}
+
+.Statistics .left .list:nth-child(2) .line2 .text2 {
+    color: rgba(115,94,153,.5019607843137255)
+}
+
+.Statistics .right {
+    width: 50%
+}
+
+.Statistics .right .list {
+    background: url(../../static/img/ic_money2.faeffa68.png) no-repeat 50%;
+    margin-left: 10px;
+    padding: 65px 20px
+}
+
+.Statistics .right .list .line2 .text1,.Statistics .right .list .line2 .text2,.Statistics .right .list .text {
+    color: #39b9f3
+}
+
+.Statistics .list {
+    background-size: 100% 100%!important;
+    padding: 20px;
+    margin: 10px 0;
+    height: 75px
+}
+
+.Statistics .list .line1 .imgs {
+    width: 16px;
+    margin-right: 5px
+}
+
+.Statistics .list .line2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    font-size: 14px
+}
+
+.sectionOneView {
+    margin-top: 15px;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.sectionOneView .whiteblock {
+    height: 10px;
+    background-color: #253341
+}
+
+.sectionOneView .van-cell {
+    background-color: #0c112d;
+    color: #fff
+}
+
+.sectionOneView .van-cell__value--alone {
+    color: #fff
+}
+
+.sectionOneView .van-icon__image {
+    margin-top: 4px
+}
+
+.sectionOneView .van-cell:after,.sectionOneView .van-hairline--top-bottom:after,.sectionOneView .van-hairline-unset--top-bottom:after {
+    border-bottom: 1px solid #253341
+}
+
+.sectionOneView [class*=van-hairline]:after {
+    border: none
+}
+
+.footLine {
+    margin: 0;
+    height: 50px;
+    background-color: #253341
+}
+
+.sectionOneView .van-cell {
+    line-height: 30px;
+    align-items: center
+}
+
+.sectionOneView .van-cell__title,.sectionOneView .van-cell__value--alone {
+    padding-left: 7px
+}

@@ -1,0 +1,255 @@
+.myhead3 {
+    display: flex;
+    padding: 6px 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(12,17,45,.12549019607843137);
+    height: 32px;
+    background-color: #0c112d
+}
+
+.myhead3 .imgb {
+    width: 30%
+}
+
+.myhead3 .img1 {
+    height: 20px
+}
+
+.myhead3 .text1 {
+    color: #fff;
+    font-weight: 700;
+    width: 40%;
+    text-align: center
+}
+
+.myhead3 .text2 {
+    color: #fff;
+    width: 30%;
+    text-align: right
+}
+
+.btn_send {
+    margin-top: 25px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 13px;
+    background: #02b2d6;
+    text-align: center;
+    border-radius: 6px
+}
+
+.fildes {
+    border: .5px solid #c8c8c8;
+    border-radius: 4px
+}
+
+.oldPsw_input {
+    margin: 15px 13px 15px 13px;
+    width: 90%;
+    font-size: 14px;
+    font-family: PingFangSC-Medium;
+    outline: none;
+    border: none
+}
+
+.list_team_s {
+    text-align: center;
+    line-height: 50px;
+    height: 50px
+}
+
+.content_show {
+    text-align: center;
+    margin-top: 0;
+    padding: 15px 20px
+}
+
+.btns_pge {
+    display: flex;
+    justify-content: center
+}
+
+.robotPage {
+    background-color: #0c112d;
+    min-height: 100vh
+}
+
+.robotPage .title {
+    background-color: #02b2d6;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 16px
+}
+
+.robotPage .botlist {
+    width: 90%;
+    margin: auto
+}
+
+.robotPage .botlist .van-swipe {
+    overflow: visible
+}
+
+.robotPage .botlist .bot1 {
+    background: url(../../static/img/bg1.227c8a80.png) no-repeat;
+    color: #c58f00
+}
+
+.robotPage .botlist .bot1 .buttb .butt {
+    background-color: #f1bc31;
+    color: #fff3d4
+}
+
+.robotPage .botlist .bot1 .conb .left .text4 {
+    color: #c58f00
+}
+
+.robotPage .botlist .bot2 {
+    background: url(../../static/img/bg2.5e36adb7.png) no-repeat;
+    color: #ec5c00
+}
+
+.robotPage .botlist .bot2 .buttb .butt {
+    background-color: #fe8557;
+    color: #ffd4b5
+}
+
+.robotPage .botlist .bot2 .conb .left .text4 {
+    color: #d85907
+}
+
+.robotPage .botlist .bot3 {
+    background: url(../../static/img/bg3.7ea37e34.png) no-repeat;
+    color: #1799db
+}
+
+.robotPage .botlist .bot3 .buttb .butt {
+    background-color: #12a4ef;
+    color: #d2e7ff
+}
+
+.robotPage .botlist .bot3 .conb .left .text4 {
+    color: #09a0ed
+}
+
+.robotPage .botlist .bot4 {
+    background: url(../../static/img/bg4.20c8517b.png) no-repeat;
+    color: #89009e
+}
+
+.robotPage .botlist .bot4 .buttb .butt {
+    background-color: #cb1bdf;
+    color: #eeb5ff
+}
+
+.robotPage .botlist .bot4 .conb .left .text4 {
+    color: #a50db5
+}
+
+.robotPage .botlist .bot5 {
+    background: url(../../static/img/bg5.847b8458.png) no-repeat;
+    color: #ccc7c7
+}
+
+.robotPage .botlist .bot5 .buttb .butt {
+    background-color: #1d1c1c;
+    color: #eee
+}
+
+.robotPage .botlist .bot5 .conb .left .text4 {
+    color: #ccc7c7
+}
+
+.robotPage .botlist .bot6 {
+    background: url(../../static/img/bg6.e0ce4990.png) no-repeat;
+    color: #bca23d
+}
+
+.robotPage .botlist .bot6 .buttb .butt {
+    background-color: #8b5f00;
+    color: #fee494
+}
+
+.robotPage .botlist .bot6 .conb .left .text4 {
+    color: #fee494
+}
+
+.robotPage .botlist .bot7 {
+    background: url(../../static/img/bg7.3a2a679b.png) no-repeat;
+    color: #fff
+}
+
+.robotPage .botlist .bot7 .buttb .butt {
+    background-color: #439a03;
+    color: #fff
+}
+
+.robotPage .botlist .bot7 .conb .left .text4 {
+    color: #fff
+}
+
+.robotPage .botlist .bot {
+    background-size: 100% 185px!important;
+    margin: 5px 0 15px
+}
+
+.robotPage .botlist .bot .head {
+    text-align: center;
+    padding-top: 8px;
+    font-size: 16px;
+    color: #fff
+}
+
+.robotPage .botlist .bot .conb {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    min-height: 130px
+}
+
+.robotPage .botlist .bot .conb .left {
+    font-size: 14px;
+    line-height: 32px;
+    margin-top: 10px;
+    width: 65%
+}
+
+.robotPage .botlist .bot .conb .left .text4 {
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 18px
+}
+
+.robotPage .botlist .bot .conb .right {
+    margin: 15px 0
+}
+
+.robotPage .botlist .bot .conb .right .img1 {
+    width: 10px;
+    margin: 0 5px 2px
+}
+
+.robotPage .botlist .bot .conb .right .img2 {
+    width: 52px;
+    height: 66px
+}
+
+.robotPage .botlist .bot .buttb {
+    text-align: center;
+    margin-top: -10px;
+    font-size: 14px
+}
+
+.robotPage .botlist .bot .buttb .butt {
+    padding: 0 20px;
+    line-height: 30px;
+    border-radius: 10px
+}
+
+.robotPage .robot-flag {
+    float: right;
+    margin-right: 20px
+}

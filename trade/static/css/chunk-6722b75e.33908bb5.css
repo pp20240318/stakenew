@@ -1,0 +1,171 @@
+.dialog1mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,.5019607843137255);
+    z-index: 3
+}
+
+.dialog1mask .dialog1 {
+    width: 300px;
+    margin: 30% auto;
+    background-color: #253341;
+    border-radius: 10px;
+    color: #fff
+}
+
+.dialog1mask .dialog1 .textb {
+    padding: 20px
+}
+
+.dialog1mask .dialog1 .textb .line {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between
+}
+
+.dialog1mask .dialog1 .textb .line1 .text2 {
+    background-color: #0c112d;
+    border: none;
+    padding: 5px 10px;
+    width: 120px;
+    border-radius: 5px
+}
+
+.dialog1mask .dialog1 .buttb {
+    display: flex;
+    padding-bottom: 15px;
+    justify-content: space-around
+}
+
+.dialog1mask .dialog1 .buttb .butt {
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 5px
+}
+
+.dialog1mask .dialog1 .buttb .butt1 {
+    border: 1px solid #666
+}
+
+.dialog1mask .dialog1 .buttb .butt2 {
+    background-color: #4bbeaa
+}
+
+.robotPage {
+    background-color: #0c112d;
+    min-height: 100vh
+}
+
+.robotPage .title {
+    background-color: #02b2d6;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 16px
+}
+
+.robotPage .lanb {
+    background-color: #0c112d;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.robotPage .lanb .img {
+    height: 25px;
+    vertical-align: middle
+}
+
+.robotPage .lanb .text1 {
+    width: 20px
+}
+
+.robotPage .lanb .text2 {
+    color: #fff;
+    font-size: 16px
+}
+
+.robotPage .con1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #253341;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 15px
+}
+
+.robotPage .con1 .textb {
+    text-align: center
+}
+
+.robotPage .con1 .textb .text1 {
+    color: #aaa;
+    font-size: 12px;
+    margin-bottom: 5px
+}
+
+.robotPage .con1 .textb .text2 {
+    color: #fff;
+    font-size: 16px
+}
+
+.robotPage .botlist {
+    width: 90%;
+    margin: auto
+}
+
+.robotPage .botlist .list {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    background: url(../../static/img/bg.818e3404.png) no-repeat 50%;
+    background-size: 100% 100%
+}
+
+.robotPage .botlist .list .left {
+    margin-right: 15px
+}
+
+.robotPage .botlist .list .left .img1 {
+    width: 80px
+}
+
+.robotPage .botlist .list .right {
+    width: 80%
+}
+
+.robotPage .botlist .list .right .line1 {
+    display: flex;
+    justify-content: space-between;
+    color: #fff
+}
+
+.robotPage .botlist .list .right .line1 .text2 {
+    display: inline-block;
+    padding: 4px 15px;
+    background-color: #8198ee;
+    border-radius: 5px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+
+.robotPage .botlist .list .right .line2 {
+    color: #aaa;
+    font-size: 12px;
+    margin: 10px 0 5px
+}
+
+.robotPage .notece {
+    padding: 10px 20px 20px;
+    text-indent: 2em;
+    font-size: 13px;
+    color: #aaa
+}

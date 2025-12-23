@@ -1,0 +1,206 @@
+.van-tabs__line {
+    background-color: #02b2d6
+}
+
+.dialog1 {
+    background: url(../../static/img/pic16.b9cdd3cb.jpg) no-repeat 50%;
+    height: 500px;
+    background-size: 100%
+}
+
+.dialog1 .cons {
+    padding: 0 20px
+}
+
+.dialog1 .cons .line1 {
+    text-align: center;
+    padding: 80px 0 20px;
+    font-size: 25px
+}
+
+.dialog1 .cons .line2 {
+    padding: 25px;
+    color: orange;
+    font-weight: 700
+}
+
+.dialog1 .cons .line2 .textb {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0
+}
+
+.dialog1 .cons .line3 {
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 700
+}
+
+.dialog1 .cons .line3 .text2 {
+    margin: 5px 0 5px 30px
+}
+
+.inviteFir {
+    background-color: #253341;
+    min-height: 100vh
+}
+
+.list_team_s {
+    text-align: center;
+    line-height: 50px;
+    height: 50px
+}
+
+.level_list {
+    border: 1.1px solid hsla(0,0%,80%,.3);
+    background: #0c112d;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 13px;
+    width: 25%;
+    padding: 10px 10px
+}
+
+.copys {
+    width: 45px;
+    height: 24px;
+    line-height: 24px;
+    border-radius: 3px;
+    position: absolute;
+    background: #02b2d6;
+    text-align: center;
+    right: 10px;
+    top: 80px;
+    color: #fff
+}
+
+.btn_list_content div {
+    width: 33%;
+    height: 30px;
+    line-height: 30px;
+    color: #02b2d6;
+    font-size: 12px
+}
+
+.list_content {
+    padding: 0 20px 20px 20px
+}
+
+.list_content .list {
+    background-color: #0c112d;
+    border-radius: 10px;
+    padding-bottom: 10px
+}
+
+.btn_list_content {
+    text-align: center;
+    flex-wrap: nowrap;
+    overflow-x: auto
+}
+
+.btn_list_content:not(:last-child) {
+    border-bottom: 1px solid #333
+}
+
+.btm_list div {
+    width: 33%;
+    height: 30px;
+    line-height: 30px;
+    color: #666;
+    font-size: 14px
+}
+
+.home_qustion div {
+    margin-top: 0
+}
+
+.home_qustion {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #fff;
+    font-size: 15px
+}
+
+.btm_list {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    flex-wrap: nowrap;
+    overflow-x: auto
+}
+
+.btns {
+    position: absolute;
+    right: 10px;
+    top: 22px;
+    color: #f6e724
+}
+
+.header {
+    border-radius: 6px;
+    margin-bottom: 15px;
+    background-size: 100% 100%;
+    height: 130px;
+    display: block;
+    position: relative;
+    padding: 20px;
+    color: #fff
+}
+
+.invite {
+    margin: 20px 20px 0 20px;
+    background: url(../../static/img/img_u_bg_1.02631de4.png) no-repeat;
+    background-size: 100% 100%
+}
+
+.listb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap
+}
+
+.listb .list {
+    width: 50%;
+    text-align: center
+}
+
+.listb .list .text1 {
+    font-size: 13px;
+    padding-bottom: 5px
+}
+
+.inviteFir .van-cell {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #02b2d6!important;
+    color: #fff
+}
+
+.inviteFir .van-collapse-item__wrapper {
+    margin-top: -6px
+}
+
+.inviteFir .van-cell__right-icon {
+    color: #fff
+}
+
+.inviteFir .van-collapse-item__content {
+    color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #02b2d6!important
+}
+
+.inviteFir .van-nav-bar__content {
+    background-color: #0c112d
+}
+
+.team-user-stat>div {
+    flex: 1
+}

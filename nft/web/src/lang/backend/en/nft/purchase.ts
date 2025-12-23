@@ -1,0 +1,20 @@
+export default {
+    id: 'id',
+    reference: 'reference',
+    referencetable__username: 'username',
+    user_id: 'user',
+    user__username: 'username',
+    status: 'status',
+    'status opt0': 'status opt0',
+    'status opt1': 'status opt1',
+    source: 'source',
+    create_time: 'create_time',
+    expire_time: 'expire_time',
+    product_id: 'product_id',
+    product__computer_name: 'computer_name',
+    product__price: 'price',
+    valid_day: 'valid_day',
+    bonus: 'bonus',
+    'quick Search Fields': 'id',
+    ai_attributes:'ai_attributes'
+}

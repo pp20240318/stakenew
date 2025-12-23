@@ -1,0 +1,150 @@
+.myhead3 {
+    display: flex;
+    padding: 6px 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(12,17,45,.12549019607843137);
+    height: 32px;
+    background-color: #0c112d
+}
+
+.myhead3 .imgb {
+    width: 30%
+}
+
+.myhead3 .img1 {
+    height: 20px
+}
+
+.myhead3 .text1 {
+    color: #fff;
+    font-weight: 700;
+    width: 40%;
+    text-align: center
+}
+
+.myhead3 .text2 {
+    color: #fff;
+    width: 30%;
+    text-align: right
+}
+
+.look_msg .van-cell {
+    height: 100px!important
+}
+
+.look .van-cell,.look_msg .van-cell {
+    line-height: 26px;
+    font-size: 16px;
+    border: .5px solid #c8c8c8;
+    border-radius: 8px
+}
+
+.look .van-cell {
+    height: 50px
+}
+
+.selectb {
+    margin: 15px 0 10px
+}
+
+.selectb .select1 {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px
+}
+
+.bg {
+    background: #253341;
+    width: 100%;
+    min-height: 100vh
+}
+
+.bgs {
+    background: #0c112d;
+    border-radius: 15px;
+    padding: 20px
+}
+
+.Take_btn {
+    width: 100%;
+    height: 45px;
+    background: #02b2d6;
+    color: #fff;
+    border-radius: 6px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 60px
+}
+
+.look_msg {
+    margin-top: 15px
+}
+
+.fee_title {
+    font-family: PingFangSC-Regular;
+    font-size: 13px;
+    color: #ccc;
+    letter-spacing: 0;
+    font-weight: 400;
+    margin-top: 10px
+}
+
+.qiehuan {
+    width: 23px;
+    height: 23px;
+    margin-left: 7px
+}
+
+.with_amount {
+    font-family: PingFangSC-Medium;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 50px
+}
+
+.title_bottom {
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #fff;
+    opacity: .7;
+    font-weight: 400
+}
+
+.title_with {
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    font-weight: 500
+}
+
+.with_drawal {
+    padding: 20px
+}
+
+.header {
+    background: #02b2d6;
+    background-size: 100% 100%;
+    padding: 22px 22px;
+    color: #fff;
+    border-radius: 15px
+}
+
+.btn_wait {
+    width: 100%
+}
+
+.btn {
+    height: 50px;
+    background: #6e3fcc;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+    border-radius: 25px;
+    border: #6e3fcc;
+    line-height: 50px;
+    text-align: center;
+    margin-top: 50px
+}

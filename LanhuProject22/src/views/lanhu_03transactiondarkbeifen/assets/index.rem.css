@@ -1,0 +1,132 @@
+html {
+  font-size: 37.5px;
+}
+
+.page {
+  background-color: rgba(37, 46, 60, 1);
+  position: relative;
+  width: 10rem;
+  height: 23.734rem;
+  overflow: hidden;
+  padding: 0.427rem 0.534rem 10.107rem 0.534rem;
+}
+
+.group_10 {
+  margin: 0 0.054rem 0 0.214rem;
+}
+
+.text_1 {
+  height: 0.427rem;
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 1);
+  font-size: 0.373rem;
+  letter-spacing: -0.2800000011920929px;
+  text-transform: lowercase;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 0.454rem;
+}
+
+.thumbnail_1 {
+  width: 0.454rem;
+  height: 0.294rem;
+  margin: 0.054rem 0 0.08rem 6.347rem;
+}
+
+.thumbnail_2 {
+  width: 0.4rem;
+  height: 0.294rem;
+  margin: 0.027rem 0 0.107rem 0.134rem;
+}
+
+.image_1 {
+  width: 0.64rem;
+  height: 0.294rem;
+  margin: 0.027rem 0 0.107rem 0.134rem;
+}
+
+.group_11 {
+  width: 5.334rem;
+  margin: 0.32rem 3.6rem 0 0;
+}
+
+.label_3 {
+  width: 1.28rem;
+  height: 1.28rem;
+}
+
+.text_2 {
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 1);
+  font-size: 0.426rem;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 0.587rem;
+  margin-top: 0.374rem;
+}
+
+.group_3 {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  width: 8.934rem;
+  margin-top: 0.64rem;
+  padding: 0.107rem 0.107rem 0.107rem 0.107rem;
+}
+
+.text-wrapper_1 {
+  background-color: rgba(249, 213, 74, 1);
+  border-radius: 12px;
+  padding: 0.267rem 1.44rem 0.214rem 1.44rem;
+}
+
+.text_3 {
+  overflow-wrap: break-word;
+  color: rgba(22, 22, 22, 1);
+  font-size: 0.373rem;
+  font-weight: NaN;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 0.534rem;
+}
+
+.text-wrapper_2 {
+  background-color: rgba(34, 34, 34, 1);
+  border-radius: 12px;
+  padding: 0.267rem 1.414rem 0.214rem 1.44rem;
+}
+
+.text_4 {
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.373rem;
+  font-weight: NaN;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 0.534rem;
+}
+
+.image-text_6 {
+  width: 4rem;
+  align-self: center;
+  margin-top: 4.4rem;
+}
+
+.image_2 {
+  width: 4rem;
+  height: 3.867rem;
+}
+
+.text-group_1 {
+  overflow-wrap: break-word;
+  color: rgba(185, 193, 217, 1);
+  font-size: 0.346rem;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 0.48rem;
+  align-self: center;
+  margin-top: 0.56rem;
+}

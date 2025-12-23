@@ -1,0 +1,159 @@
+
+.ChangePswView {
+    margin: 0;
+    width: 100%;
+    background-color: #0c112d;
+    min-height: 100vh
+}
+
+.ChangePswView .head {
+    display: flex;
+    padding: 6px 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,91,109,.12549019607843137);
+    height: 32px
+}
+
+.ChangePswView .head .img1 {
+    height: 20px
+}
+
+.ChangePswView .head .text {
+    color: #02b2d6;
+    font-weight: 700
+}
+
+.ChangePswView .imgb .img1 {
+    width: 100%
+}
+
+.ChangePswView .logob {
+    text-align: center;
+    margin-top: 10px
+}
+
+.ChangePswView .logob .logo {
+    width: 90px
+}
+
+.ChangePswView .logob .text {
+    color: #04baf7;
+    font-size: 20px
+}
+
+.ChangePswView .viewBg .inputb {
+    margin-bottom: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.ChangePswView .viewBg .inputb .input1 {
+    width: calc(100% - 25px);
+    padding: 8px 10px;
+    background-color: #fff;
+    border-radius: 8px
+}
+
+.ChangePswView .viewBg .inputb .code {
+    font-size: 12px;
+    padding: 0 10px;
+    margin-right: 15px;
+    background-color: #02b2d6;
+    color: #fff;
+    border-radius: 4px;
+    line-height: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 5px
+}
+
+.ChangePswView .viewBg .inputb .code .van-count-down {
+    line-height: unset
+}
+
+.ChangePswView .viewBg .inputb .textb {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #dadbde
+}
+
+.ChangePswView .viewBg .inputb .textb .text1,.ChangePswView .viewBg .inputb .textb .text2 {
+    border: none;
+    outline: none
+}
+
+.ChangePswView .viewBg .inputb .textb .text1 {
+    width: 28%
+}
+
+.ChangePswView .viewBg .inputb .textb .text2 {
+    width: 70%
+}
+
+.Take_btn {
+    width: 100%;
+    height: 45px;
+    background: #02b2d6;
+    color: #fff;
+    border-radius: 6px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 60px
+}
+
+.viewBg {
+    height: 100%;
+    width: 100%
+}
+
+.changePsw_BgView {
+    margin: 20px 15px 0 15px;
+    border-radius: 16px
+}
+
+.changePsw_BgView .tab {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #02b2d6;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px
+}
+
+.changePsw_BgView .tab .text {
+    padding: 10px 0;
+    width: 50%;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px
+}
+
+.changePsw_BgView .tab .active {
+    background-color: #fff;
+    color: #02b2d6
+}
+
+.confirmBtnBg {
+    padding-bottom: 30px;
+    margin: 36px 13px 0;
+    height: 50px
+}
+
+.confirmBtn {
+    width: 100%;
+    height: 50px;
+    background: #6e3fcc;
+    font-family: PingFangSC-Medium;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 25px;
+    border: #6e3fcc
+}

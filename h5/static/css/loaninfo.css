@@ -1,0 +1,422 @@
+.loan {
+    min-height: calc(100vh - 15px);
+    background-color: #253341;
+    padding-bottom: 15px
+}
+
+.loan .headB {
+    display: flex;
+    justify-content: space-between;
+    background-color: #17212a;
+    align-items: center
+}
+
+.loan .headB .img1 {
+    font-size: 25px;
+    padding: 8px;
+    color: #fff
+}
+
+.loan .headB .text1 {
+    font-size: 16px;
+    color: #fff
+}
+
+.loan .headB .text2 {
+    width: 40px
+}
+
+.loan .con {
+    padding: 15px;
+    background-color: #17212a;
+    border-radius: 10px;
+    margin: 15px 15px 0
+}
+
+.loan .con .title {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 15px
+}
+
+.loan .con .line1 {
+    font-size: 24px;
+    color: #fff
+}
+
+.loan .con .line1 .text1 {
+    color: #0060ff;
+    margin-left: 5px
+}
+
+.loan .con .line2 {
+    font-size: 12px;
+    color: #666
+}
+
+.loan .con .line3 {
+    color: #fff;
+    background-color: #0060ff;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 50px;
+    margin: 10px 0
+}
+
+.loan .con .color1 {
+    background-color: #999
+}
+
+.loan .con .line4 .text1 {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 5px
+}
+
+.loan .con .line4 .text2 {
+    background-color: #292929;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between
+}
+
+.loan .con .line4 .text2 .text2-1 {
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #292929;
+    border: none;
+    outline: none
+}
+
+.loan .con .line4 .text2 .text2-2 {
+    padding: 6px 10px;
+    background-color: #1a1a1a;
+    margin: 5px 10px 5px 0;
+    font-size: 13px;
+    border-radius: 5px
+}
+
+.loan .con .line5 {
+    margin-top: 15px;
+    position: relative
+}
+
+.loan .con .line5 .text1 {
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 5px
+}
+
+.loan .con .line5 .text2 {
+    width: calc(100% - 14px);
+    color: #fff;
+    background-color: #292929;
+    padding: 7px;
+    font-size: 16px;
+    border-radius: 5px
+}
+
+.loan .con .line5 .text3 {
+    padding: 5px 8px;
+    color: #fff;
+    background-color: #292929;
+    border-radius: 5px;
+    position: absolute;
+    width: calc(100% - 16px);
+    left: 0;
+    top: 65px;
+    z-index: 2
+}
+
+.loan .con .line5 .text3 .list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding: 5px 10px;
+    align-items: center
+}
+
+.loan .con .line6 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px
+}
+
+.loan .con .line6 .text1-1 {
+    font-size: 12px;
+    color: #666
+}
+
+.loan .con .line6 .text1-2 {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 5px
+}
+
+.loan .con .line7 {
+    font-size: 12px;
+    color: #666;
+    margin-top: 15px
+}
+
+.loan .con .butt {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #0060ff;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 15px
+}
+
+.loan .con .line8 .text1 {
+    text-decoration: underline
+}
+
+.loan .con .line8 .text2 {
+    display: inline-block;
+    width: 100px;
+    border-bottom: 1px solid #9fa6b5
+}
+
+.loan .con .line8 .img1 {
+    width: 60px
+}
+
+.loan .con .line8 .text3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin: 20px 0 5px;
+    color: #ccc
+}
+
+.loan .con .line8 .text4 {
+    font-size: 14px;
+    margin-bottom: 3px;
+    color: #ccc
+}
+
+.loan .con .line8 .text5 {
+    font-size: 14px;
+    color: #999
+}
+
+.loan .con2 {
+    padding: 15px
+}
+
+.loan .con2 .title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px
+}
+
+.loan .con2 .listb2 {
+    text-align: center;
+    font-size: 14px
+}
+
+.loan .con2 .listb2 .text1 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #fff
+}
+
+.loan .con2 .listb2 .text2 {
+    color: #aaa
+}
+
+.loan .con2 .listb .list {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #17212a
+}
+
+.loan .con2 .listb .list .line {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.loan .con2 .listb .list .line .text1 {
+    color: #aaa
+}
+
+.loan .con2 .listb .list .line .text2 {
+    color: #ccc;
+    font-weight: 700
+}
+
+.loan .con2 .listb .list .buttb {
+    text-align: center;
+    position: relative
+}
+
+.loan .con2 .listb .list .buttb .butt {
+    padding: 5px 30px;
+    border-radius: 5px;
+    background-color: #0060ff;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 15px;
+    display: inline-block
+}
+
+.loan .con2 .listb .list .buttb .butt2 {
+    background-color: #666
+}
+
+.loan .con2 .listb .list .buttb .img1 {
+    position: absolute;
+    width: 80px;
+    bottom: 10px;
+    right: 10px
+}
+
+.loan .con3 {
+    margin: 10px
+}
+
+.loan .con3 .canvas {
+    border-radius: 10px;
+    border: 1px dashed #ccc
+}
+
+.loan .con3 .buttb {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px
+}
+
+.loan .con3 .buttb .butt {
+    font-size: 14px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: #0060ff;
+    color: #fff
+}
+
+.loan .con3 .buttb .butt1 {
+    background-color: #666
+}
+
+.loan .dialog2 {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.8)
+}
+
+.loan .dialog2 .mask {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #17212a;
+    width: 320px;
+    margin: 30% auto 0
+}
+
+.loan .dialog2 .mask .line {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.loan .dialog2 .mask .line .text1 {
+    color: #aaa
+}
+
+.loan .dialog2 .mask .line .text2 {
+    color: #ccc;
+    font-weight: 700
+}
+
+.loan .dialog2 .mask .buttb {
+    text-align: center;
+    position: relative
+}
+
+.loan .dialog2 .mask .buttb .butt {
+    padding: 5px 30px;
+    border-radius: 5px;
+    background-color: #0060ff;
+    color: #fff;
+    font-size: 14px;
+    display: inline-block;
+    margin: 15px 15px 0
+}
+
+.loan .dialog2 .mask .buttb .butt2 {
+    background-color: #666
+}
+
+.Twhite {
+    background: none;
+    background-color: #eee
+}
+
+.Twhite .con {
+    background-color: #fff
+}
+
+.Twhite .con .line1,.Twhite .con .title {
+    color: #333
+}
+
+.Twhite .con .line4 .text2,.Twhite .con .line4 .text3,.Twhite .con .line5 .text2,.Twhite .con .line5 .text3 {
+    color: #333;
+    background-color: #eee
+}
+
+.Twhite .con .line4 .text2 .text2-2,.Twhite .con .line4 .text3 .text2-2,.Twhite .con .line5 .text2 .text2-2,.Twhite .con .line5 .text3 .text2-2 {
+    background-color: #0060ff;
+    color: #fff
+}
+
+.Twhite .con .line6 .text1-2 {
+    color: #666
+}
+
+.Twhite .con .line8 .text3 {
+    color: #333
+}
+
+.Twhite .con .line8 .text4 {
+    color: #666
+}
+
+.Twhite .con .line8 .text5 {
+    color: #888
+}
+
+.Twhite .con2 .listb2 .text1,.Twhite .con2 .title {
+    color: #555
+}
+
+.Twhite .con2 .listb .list {
+    background-color: #fff
+}
+
+.Twhite .con2 .listb .list .line .text2 {
+    color: #ccc
+}
+
+.Twhite .dialog2 {
+    background-color: rgba(0,0,0,.6)
+}
+
+.Twhite .dialog2 .mask {
+    background-color: #fff
+}
+
+input::-webkit-inner-spin-button,input::-webkit-outer-spin-button {
+    -webkit-appearance: none
+}

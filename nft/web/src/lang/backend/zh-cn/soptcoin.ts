@@ -1,0 +1,17 @@
+export default {
+    id: 'id',
+    icon: '图片',
+    name: '交易对名称',
+    code: '简称',
+    realname: '真实名称',
+    recharge_address:'充值地址',
+    type: '类型',
+    'type 1': '现货',
+    'type 2': '合约',
+    status: '状态',
+    'status 1': '启用',
+    'status 2': '禁用',
+    created_at: '创建日期',
+    updated_at: '修改日期',
+    'quick Search Fields': 'id',
+}

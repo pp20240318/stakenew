@@ -1,0 +1,128 @@
+.page {
+  background-color: rgba(37, 46, 60, 1);
+  position: relative;
+  width: 100vw;
+  height: 237.34vw;
+  overflow: hidden;
+  padding: 4.26vw 5.33vw 101.06vw 5.33vw;
+}
+
+.group_10 {
+  margin: 0 0.53vw 0 2.13vw;
+}
+
+.text_1 {
+  height: 4.27vw;
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 1);
+  font-size: 3.73vw;
+  letter-spacing: -0.2800000011920929px;
+  text-transform: lowercase;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 4.54vw;
+}
+
+.thumbnail_1 {
+  width: 4.54vw;
+  height: 2.94vw;
+  margin: 0.53vw 0 0.8vw 63.46vw;
+}
+
+.thumbnail_2 {
+  width: 4vw;
+  height: 2.94vw;
+  margin: 0.26vw 0 1.06vw 1.33vw;
+}
+
+.image_1 {
+  width: 6.4vw;
+  height: 2.94vw;
+  margin: 0.26vw 0 1.06vw 1.33vw;
+}
+
+.group_11 {
+  width: 53.34vw;
+  margin: 3.2vw 36vw 0 0;
+}
+
+.label_3 {
+  width: 12.8vw;
+  height: 12.8vw;
+}
+
+.text_2 {
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 1);
+  font-size: 4.26vw;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 5.87vw;
+  margin-top: 3.74vw;
+}
+
+.group_3 {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  width: 89.34vw;
+  margin-top: 6.4vw;
+  padding: 1.06vw 1.06vw 1.06vw 1.06vw;
+}
+
+.text-wrapper_1 {
+  background-color: rgba(249, 213, 74, 1);
+  border-radius: 12px;
+  padding: 2.66vw 14.4vw 2.13vw 14.4vw;
+}
+
+.text_3 {
+  overflow-wrap: break-word;
+  color: rgba(22, 22, 22, 1);
+  font-size: 3.73vw;
+  font-weight: NaN;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 5.34vw;
+}
+
+.text-wrapper_2 {
+  background-color: rgba(34, 34, 34, 1);
+  border-radius: 12px;
+  padding: 2.66vw 14.13vw 2.13vw 14.4vw;
+}
+
+.text_4 {
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 3.73vw;
+  font-weight: NaN;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 5.34vw;
+}
+
+.image-text_6 {
+  width: 40vw;
+  align-self: center;
+  margin-top: 44vw;
+}
+
+.image_2 {
+  width: 40vw;
+  height: 38.67vw;
+}
+
+.text-group_1 {
+  overflow-wrap: break-word;
+  color: rgba(185, 193, 217, 1);
+  font-size: 3.46vw;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 4.8vw;
+  align-self: center;
+  margin-top: 5.6vw;
+}

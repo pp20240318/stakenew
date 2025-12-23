@@ -1,0 +1,17 @@
+export default {
+    id: 'id',
+    type: 'type',
+    rid: 'rid',
+    email: 'email',
+    nickname: 'nickname',
+    credit: 'credit',
+    phone: 'phone',
+    invite_code: 'invite_code',
+    true_name: 'true_name',
+    'true_name 0': 'true_name 0',
+    'true_name 1': 'true_name 1',
+    money: 'money',
+    last_login_ip: 'last_login_ip',
+    create_time: 'create_time',
+    'quick Search Fields': 'id',
+}

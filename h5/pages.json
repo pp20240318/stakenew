@@ -1,0 +1,302 @@
+{
+	"pages": [
+		{
+		    "path" : "pages/home/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "home",
+		        "navigationStyle" : "custom"
+		    }
+		}, 
+		{
+			"path": "pages/market/allmarket",
+			"style": {
+				"navigationBarTitleText": "all market",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, 
+		{
+			"path": "pages/market/market",
+			"style": {
+				"navigationBarTitleText": "market",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+		    "path" : "pages/holdings/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "holding",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/team/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "team",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/team",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "team",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/share",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "share",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/noticelist",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "noticelist",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/home/alertlist",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "alertlist",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/loaninfo",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "loaninfo",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/noticedetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "noticedetail",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/home/alertdetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "alertdetail",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/truename",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "truename",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/truename2",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "truename2",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/changepsw",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "changepsw",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/changepaypsw",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "changepaypsw",
+		        "navigationStyle" : "custom"
+		    }
+		}
+		,
+		{
+		    "path" : "pages/login/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "login",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/login/forget",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "forget",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/login/register",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "register",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/recharge/depositDetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "depositDetail",
+		        "navigationStyle" : "custom"
+		    }
+		}, 
+		{
+		    "path" : "pages/recharge/depositList",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "depositList",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/recharge/withdrawal",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "withdrawal",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/recharge/withdrawalRecord",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "withdrawalRecord",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+			"path": "pages/market/detail",
+			"style": {
+				"navigationBarTitleText": "detail",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": {
+						"titleText": "detail",
+						"titleColor": "#333333",
+						"backgroundColor": "#FFFFFF",
+						"buttons": [{
+							"type": "back",
+							"color": "#333333"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/market/coingecko-widget",
+			"style": {
+				"navigationBarTitleText": "CoinGecko",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/market/cryptocompare-widget",
+			"style": {
+				"navigationBarTitleText": "CryptoCompare",
+				"navigationStyle": "custom"
+			}
+		}, 
+		{
+			"path": "pages/profile/profile",
+			"style": {
+				"navigationBarTitleText": "mine",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},     
+		{
+			"path": "pages/invite/invite",
+			"style": {
+				"navigationBarTitleText": "invite"
+			}
+		},
+		{
+			"path": "pages/report/report",
+			"style": {
+				"navigationBarTitleText": "report"
+			}
+		},
+		{
+			"path": "pages/settings/settings",
+			"style": {
+				"navigationBarTitleText": "setting"
+			}
+		},
+		{
+			"path": "pages/wallet/index",
+			"style": {
+				"navigationBarTitleText": "wallet",
+				"navigationStyle": "custom"
+			}
+		},{
+			"path": "pages/details/trade-details/index",
+			"style": {
+				"navigationBarTitleText": "wallet",
+				"navigationStyle": "custom"
+			}
+		} 
+		 
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "量化交易",
+		"navigationBarBackgroundColor": "#2C2C2C",
+		"backgroundColor": "#1A1A1A"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#007AFF",
+		"backgroundColor": "#2C2C2C",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/market/market",
+				"text": "%tab_hot_market%",
+				"iconPath": "static/images/tabbar/market-dark.svg",
+				"selectedIconPath": "static/images/tabbar/market-active-dark.svg"
+			},
+			{
+				"pagePath": "pages/market/allmarket",
+				"text": "%tab_all_market%",
+				"iconPath": "static/images/tabbar/exchange-dark.svg",
+				"selectedIconPath": "static/images/tabbar/exchange-active-dark.svg"
+			}, 
+			{
+				"pagePath": "pages/profile/profile",
+				"text": "%tab_my_profile%",
+				"iconPath": "static/images/tabbar/profile-dark.svg",
+				"selectedIconPath": "static/images/tabbar/profile-active-dark.svg"
+			}
+		]
+	},
+	"easycom": {
+		"autoscan" : true,
+		"custom": {
+			"gui-(.*)" : "@/Grace6/components/gui-$1.vue"
+		}
+	}
+}

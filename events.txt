@@ -1,0 +1,17 @@
+new_device,设备激活
+register,用户注册
+login,用户登录
+logout,用户登出
+online,在线数据
+game_rank_list,排行榜事件
+init_ad_watch,观看广告
+start_ad_watch,进入观看广告
+finish_ad_watch,观看广告结束
+init_share,分享游戏
+finish_share,结束分享游戏
+enter_rank,进入排行榜
+enter_circle,进入游戏圈
+init_stage,开始关卡
+finish_stage,完成关卡
+box_opened,开宝箱 
+enter_game,进入玩法

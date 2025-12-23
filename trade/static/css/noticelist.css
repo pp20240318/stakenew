@@ -1,0 +1,111 @@
+.myhead3 {
+    display: flex;
+    padding: 6px 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(12,17,45,.12549019607843137);
+    height: 32px;
+    background-color: #0c112d
+}
+
+.myhead3 .imgb {
+    width: 30%
+}
+
+.myhead3 .img1 {
+    height: 20px
+}
+
+.myhead3 .text1 {
+    color: #fff;
+    font-weight: 700;
+    width: 40%;
+    text-align: center
+}
+
+.myhead3 .text2 {
+    color: #fff;
+    width: 30%;
+    text-align: right
+}
+
+.point {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background: red;
+    margin-left: 10px
+}
+
+.title_rrow_content {
+    display: flex;
+    align-items: center;
+    margin-right: 11px
+}
+
+.noticelist {
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #253341;
+    background-size: 100% 100%
+}
+
+.listView {
+    margin: 0;
+    padding-top: 8px;
+    height: 100vh;
+    max-height: auto
+}
+
+.cell {
+    display: flex;
+    margin: 10px 15px 0;
+    background-color: #0c112d;
+    color: #ccc;
+    box-shadow: 0 2px 12px 0 hsla(0,0%,80.8%,.2);
+    border-radius: 8px;
+    height: 70px;
+    justify-content: space-between
+}
+
+.title_content {
+    display: flex;
+    align-items: center
+}
+
+.cellImg {
+    padding: 0;
+    margin-top: 16px;
+    margin-right: 0;
+    margin-left: 11px;
+    width: 28px;
+    height: 28px
+}
+
+.titleBgView {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px
+}
+
+.titleView {
+    margin-top: 0;
+    margin-left: 0;
+    flex: column;
+    text-align: left;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #eee
+}
+
+.timeView {
+    font-size: 12px;
+    color: #777
+}
+
+.rightarrow {
+    height: 12px;
+    right: 12px
+}

@@ -1,0 +1,207 @@
+.rigister {
+    min-height: 100vh;
+    background-size: 100% 100%;
+    background-color: #0c112d;
+    position: relative
+}
+
+.rigister .logob {
+    text-align: center;
+    margin-top: 10px
+}
+
+.rigister .logob .logo {
+    width: 90px
+}
+
+.rigister .imgb .img1 {
+    width: 100%
+}
+
+.rigister .head {
+    display: flex;
+    padding: 6px 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0,91,109,.12549019607843137);
+    height: 32px;
+    color: #fff
+}
+
+.rigister .head .img1 {
+    height: 20px
+}
+
+.rigister .head .text {
+    color: #02b2d6;
+    font-weight: 700
+}
+
+.rigister .con1 {
+    margin: 5px 20px
+}
+
+.rigister .con1 .con1swiper {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0
+}
+
+.rigister .con1 .con1swiper .list {
+    background-color: #02b2d6;
+    border-radius: 10px;
+    padding: 15px 0;
+    width: 46%;
+    text-align: center
+}
+
+.rigister .con1 .con1swiper .list .text1 {
+    font-size: 20px;
+    font-weight: 700
+}
+
+.rigister .con1 .con1swiper .list .text2 {
+    color: #999
+}
+
+.rigister .con1 .con1swiper .list .color1 {
+    color: #02b2d6
+}
+
+.rigister .con1 .con1swiper .list .color2 {
+    color: #f27900
+}
+
+.rigister .con1 .con1swiper .list .color3 {
+    color: #f20000
+}
+
+.rigister .con1 .con1swiper .list .color4 {
+    color: #28a27c
+}
+
+.rigister .con1 .con1swiper .bgcolor1 {
+    background-color: rgba(168,232,248,.4)
+}
+
+.rigister .con1 .con1swiper .bgcolor2 {
+    background-color: rgba(254,226,199,.4)
+}
+
+.rigister .con1 .con1swiper .bgcolor3 {
+    background-color: rgba(252,200,203,.4)
+}
+
+.rigister .con1 .con1swiper .bgcolor4 {
+    background-color: rgba(149,238,219,.4)
+}
+
+.rigister .con2 {
+    margin: 15px 15px 0;
+    padding-bottom: 20px;
+    border-radius: 8px
+}
+
+.rigister .con2 .tab {
+    display: flex;
+    justify-content: center;
+    background-color: #02b2d6;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px
+}
+
+.rigister .con2 .tab .text {
+    padding: 10px 0;
+    width: 50%;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px
+}
+
+.rigister .con2 .tab .active {
+    background-color: #fff;
+    color: #02b2d6
+}
+
+.rigister .con2 .box {
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.rigister .con2 .box .text {
+    border: 1px solid #dadbde;
+    border-radius: 5px;
+    padding: 8px 10px;
+    width: 100%;
+    background-color: #fff
+}
+
+.rigister .con2 .box .text:not(:last-child) {
+    margin-bottom: 15px
+}
+
+.rigister .con2 .box .text:focus {
+    border: 1px solid #02b2d6
+}
+
+.rigister .con2 .box .textb {
+    position: relative;
+    width: calc(100% - 25px)
+}
+
+.rigister .con2 .box .textb .code {
+    position: absolute;
+    right: 10px;
+    font-size: 12px;
+    padding: 3px 10px;
+    background-color: #02b2d6;
+    color: #fff;
+    top: 7px;
+    border-radius: 4px
+}
+
+.rigister .con2 .box .inputb {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%
+}
+
+.rigister .con2 .box .inputb .textb {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 8px;
+    width: calc(100% - 20px);
+    margin: 6px 0 15px;
+    border: 1px solid #dadbde;
+    display: block
+}
+
+.rigister .con2 .box .inputb .textb .text1,.rigister .con2 .box .inputb .textb .text2 {
+    border: none;
+    outline: none
+}
+
+.rigister .con2 .box .inputb .textb .text1 {
+    width: 28%
+}
+
+.rigister .con2 .box .inputb .textb .text2 {
+    width: 65%
+}
+
+.rigister .con2 .buttb {
+    padding: 0 15px 15px
+}
+
+.rigister .con2 .buttb .butt {
+    background-color: #02b2d6;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    border-radius: 5px;
+    color: #fff
+}

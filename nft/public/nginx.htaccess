@@ -1,0 +1,17 @@
+location ~* (runtime|application)/{
+	return 403;
+}
+location / {
+
+    add_header Access-Control-Allow-Origin '*'; 
+    add_header Access-Control-Allow-Methods '*';
+    add_header Access-Control-Allow-Headers '*';
+    add_header Access-Control-Allow-Credentials true; 
+    add_header Access-Control-Max-Age 604800;
+    if ($request_method = 'OPTIONS') { 
+      return 204;
+    }
+    if (!-e $request_filename){
+      rewrite  ^(.*)$  /index.php?s=$1  last;   break;
+    }
+}

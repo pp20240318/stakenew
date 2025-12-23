@@ -1,0 +1,15 @@
+export default {
+    id: 'id',
+    code: 'code',
+    name: 'name',
+    value: 'value',
+    typelist: 'typelist',
+    'typelist 0': 'typelist 0',
+    'typelist 1': 'typelist 1',
+    status: 'status',
+    'status 0': 'status 0',
+    'status 1': 'status 1',
+    create_time: 'create_time',
+    update_time: 'update_time',
+    'quick Search Fields': 'id',
+}

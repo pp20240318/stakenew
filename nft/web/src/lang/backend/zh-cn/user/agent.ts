@@ -1,0 +1,17 @@
+export default {
+    id: 'ID',
+    type: '类型',
+    rid: 'Rid',
+    email: '邮箱',
+    nickname: '昵称',
+    credit: '信用分',
+    phone: '手机',
+    invite_code: '邀请码',
+    true_name: '实名',
+    'true_name 0': '×',
+    'true_name 1': '√',
+    money: '余额',
+    last_login_ip: '最后访问IP',
+    create_time: '注册时间',
+    'quick Search Fields': 'ID',
+}

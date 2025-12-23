@@ -1,0 +1,273 @@
+{
+	"pages": [   
+		{
+		    "path" : "pages/login/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "login",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+			"path": "pages/bot/bot",
+			"style": {
+				"navigationBarTitleText": "bot",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		}, 
+		{
+		    "path" : "pages/mine/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "mine",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/team/index",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "team",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/team",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "team",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/share",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "share",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/noticelist",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "noticelist",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/home/alertlist",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "alertlist",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/loaninfo",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "loaninfo",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/noticedetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "noticedetail",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/home/alertdetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "alertdetail",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/truename",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "truename",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/truename2",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "truename2",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/changepsw",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "changepsw",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/mine/changepaypsw",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "changepaypsw",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/login/forget",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "forget",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/login/register",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "register",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/recharge/depositDetail",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "depositDetail",
+		        "navigationStyle" : "custom"
+		    }
+		}, 
+		{
+		    "path" : "pages/recharge/depositList",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "depositList",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/recharge/withdrawal",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "withdrawal",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+		    "path" : "pages/recharge/withdrawalRecord",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "withdrawalRecord",
+		        "navigationStyle" : "custom"
+		    }
+		},
+		{
+			"path": "pages/market/detail",
+			"style": {
+				"navigationBarTitleText": "detail",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": {
+						"titleText": "detail",
+						"titleColor": "#333333",
+						"backgroundColor": "#FFFFFF",
+						"buttons": [{
+							"type": "back",
+							"color": "#333333"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/market/coingecko-widget",
+			"style": {
+				"navigationBarTitleText": "CoinGecko",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/market/cryptocompare-widget",
+			"style": {
+				"navigationBarTitleText": "CryptoCompare",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/profile/profile",
+			"style": {
+				"navigationBarTitleText": "mine",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},     
+		{
+			"path": "pages/invite/invite",
+			"style": {
+				"navigationBarTitleText": "invite",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/report/report",
+			"style": {
+				"navigationBarTitleText": "report"
+			}
+		},
+		{
+			"path": "pages/settings/settings",
+			"style": {
+				"navigationBarTitleText": "setting"
+			}
+		},
+		{
+			"path": "pages/wallet/index",
+			"style": {
+				"navigationBarTitleText": "wallet",
+				"navigationStyle": "custom"
+			}
+		} 
+		 
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "TradeBot",
+		"navigationBarBackgroundColor": "#007AFF",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#007AFF",
+		"backgroundColor": "#FFFFFF",
+		"borderStyle": "black",
+		"list": [ 
+			{
+				"pagePath": "pages/bot/bot",
+				"text": "%{量化机器人}",
+				"iconPath": "static/images/tabbar/bot.png",
+				"selectedIconPath": "static/images/tabbar/bot-active.png"
+			},
+			{
+				"pagePath": "pages/profile/profile",
+				"text": "%{我的}",
+				"iconPath": "static/images/tabbar/profile.png",
+				"selectedIconPath": "static/images/tabbar/profile-active.png"
+			}
+		]
+	},
+	"easycom": {
+		"autoscan" : true,
+		"custom": {
+			"gui-(.*)" : "@/Grace6/components/gui-$1.vue"
+		}
+	}
+}

@@ -1,0 +1,162 @@
+.nick_name {
+    color: #8d3618
+}
+
+.my_code_title {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px
+}
+
+.left_btn {
+    margin-top: 10px;
+    margin-left: 10px
+}
+
+.bg_share {
+    background: url(../../static/img/bg_share.98de894d.jpg) no-repeat;
+    background-size: 100% 100%;
+    min-height: 100vh
+}
+
+.rightAmount {
+    margin-top: 10px;
+    font-size: 23px
+}
+
+.rights {
+    font-size: 15px
+}
+
+.right-bottom {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    color: #8b5ff3
+}
+
+.lv {
+    font-size: 15px;
+    line-height: 20px;
+    color: #666;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 25px
+}
+
+.shareView {
+    overflow: auto;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: #f3f1f7;
+    position: relative;
+    background-size: 100% 100%
+}
+
+.headLine {
+    margin-top: 31px;
+    margin-left: 15px;
+    width: 32px;
+    height: 6px;
+    background: #000
+}
+
+.inviteTitleView {
+    margin-top: 5px;
+    font-family: PingFangSC-Medium;
+    font-size: 18px;
+    color: #fff;
+    text-align: center
+}
+
+.inviteOtherTitleView {
+    margin-top: 20px;
+    font-family: PingFangSC-Medium;
+    font-size: 28px;
+    color: #fff;
+    text-align: center
+}
+
+.codeBgview {
+    display: flex;
+    margin: 9px 15px 0;
+    justify-content: center
+}
+
+.headImg {
+    margin: 0;
+    height: 255px
+}
+
+.codeImg {
+    margin-left: 15px;
+    margin-top: 40px;
+    width: 115px;
+    height: 115px
+}
+
+.copyLinkBgView {
+    position: relative;
+    padding-top: 20px;
+    margin: 120px 15px 15px 15px;
+    padding-bottom: 20px;
+    background-color: #bc8f8f;
+    background: #fff;
+    box-shadow: 0 2px 12px 0 hsla(0,0%,80.8%,.2);
+    border-radius: 16px
+}
+
+.referView {
+    margin-top: 35px;
+    margin-left: 21px;
+    height: 20px;
+    font-family: PingFangSC-Medium;
+    font-size: 14px;
+    color: #8d3618;
+    text-align: left
+}
+
+.referMsgView {
+    margin-top: 0;
+    margin-left: 21px;
+    text-align: left;
+    height: 17px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #bb816d
+}
+
+.copyBtnBgView {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 15px 0;
+    height: 30px;
+    background: #f5f4f8;
+    border-radius: 14.3px
+}
+
+.linkAddress {
+    margin: 6px 16px;
+    height: 17px;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #666;
+    align-self: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left
+}
+
+.copyBtn {
+    margin: 0;
+    width: 75px;
+    background: #02b2d6;
+    border-radius: 0 14.3px 14.3px 0;
+    color: #fff;
+    font-family: PingFangSC-Medium;
+    font-size: 11px;
+    text-align: center;
+    line-height: 28.6px
+}

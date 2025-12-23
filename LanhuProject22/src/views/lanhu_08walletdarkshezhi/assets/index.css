@@ -1,0 +1,295 @@
+.page {
+  background-color: rgba(26, 32, 44, 1);
+  position: relative;
+  width: 375px;
+  height: 812px;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 16px;
+  padding-bottom: 0;
+}
+
+.box_16 {
+  margin: 0 22px 0 28px;
+}
+
+.text_1 {
+  height: 16px;
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 1);
+  font-size: 14px;
+  letter-spacing: -0.2800000011920929px;
+  text-transform: lowercase;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 17px;
+}
+
+.thumbnail_1 {
+  width: 17px;
+  height: 11px;
+  margin: 2px 0 3px 238px;
+}
+
+.thumbnail_2 {
+  width: 15px;
+  height: 11px;
+  margin: 1px 0 4px 5px;
+}
+
+.image_1 {
+  width: 24px;
+  height: 11px;
+  margin: 1px 0 4px 5px;
+}
+
+.box_17 {
+  width: 202px;
+  margin: 12px 153px 0 20px;
+}
+
+.label_2 {
+  width: 48px;
+  height: 48px;
+}
+
+.text_2 {
+  height: 25px;
+  overflow-wrap: break-word;
+  color: rgba(237, 242, 247, 1);
+  font-size: 18px;
+  letter-spacing: 0.20000000298023224px;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 25px;
+  margin-top: 12px;
+}
+
+.text_3 {
+  height: 22px;
+  overflow-wrap: break-word;
+  color: rgba(113, 128, 150, 1);
+  font-size: 16px;
+  letter-spacing: 0.20000000298023224px;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 22px;
+  margin: 24px 294px 0 25px;
+}
+
+.box_18 {
+  width: 325px;
+  align-self: center;
+  margin-top: 20px;
+}
+
+.text_4 {
+  height: 22px;
+  overflow-wrap: break-word;
+  color: rgba(237, 242, 247, 1);
+  font-size: 16px;
+  letter-spacing: 0.20000000298023224px;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 22px;
+  margin-top: 1px;
+}
+
+.label_1 {
+  width: 44px;
+  height: 24px;
+}
+
+.box_19 {
+  width: 325px;
+  align-self: center;
+  margin-top: 29px;
+}
+
+.text_5 {
+  height: 22px;
+  overflow-wrap: break-word;
+  color: rgba(237, 242, 247, 1);
+  font-size: 16px;
+  letter-spacing: 0.20000000298023224px;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 22px;
+}
+
+.thumbnail_3 {
+  width: 20px;
+  height: 20px;
+  margin: 1px 0 1px 0;
+}
+
+.box_20 {
+  width: 325px;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.text_6 {
+  height: 22px;
+  overflow-wrap: break-word;
+  color: rgba(237, 242, 247, 1);
+  font-size: 16px;
+  letter-spacing: 0.20000000298023224px;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 22px;
+}
+
+.thumbnail_4 {
+  width: 20px;
+  height: 20px;
+  margin: 1px 0 1px 0;
+}
+
+.text_7 {
+  height: 22px;
+  overflow-wrap: break-word;
+  color: rgba(113, 128, 150, 1);
+  font-size: 16px;
+  letter-spacing: 0.20000000298023224px;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 22px;
+  margin: 45px 234px 0 25px;
+}
+
+.box_21 {
+  width: 325px;
+  align-self: center;
+  margin-top: 21px;
+}
+
+.text_8 {
+  height: 22px;
+  overflow-wrap: break-word;
+  color: rgba(237, 242, 247, 1);
+  font-size: 16px;
+  letter-spacing: 0.20000000298023224px;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 22px;
+}
+
+.thumbnail_5 {
+  width: 20px;
+  height: 20px;
+  margin: 1px 0 1px 0;
+}
+
+.box_22 {
+  width: 325px;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.text_9 {
+  height: 22px;
+  overflow-wrap: break-word;
+  color: rgba(237, 242, 247, 1);
+  font-size: 16px;
+  letter-spacing: 0.20000000298023224px;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 22px;
+}
+
+.thumbnail_6 {
+  width: 20px;
+  height: 20px;
+  margin: 1px 0 1px 0;
+}
+
+.box_23 {
+  width: 325px;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.text_10 {
+  height: 22px;
+  overflow-wrap: break-word;
+  color: rgba(237, 242, 247, 1);
+  font-size: 16px;
+  letter-spacing: 0.20000000298023224px;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 22px;
+}
+
+.thumbnail_7 {
+  width: 20px;
+  height: 20px;
+  margin: 1px 0 1px 0;
+}
+
+.text_11 {
+  height: 22px;
+  overflow-wrap: break-word;
+  color: rgba(254, 80, 80, 1);
+  font-size: 16px;
+  letter-spacing: 0.20000000298023224px;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 22px;
+  margin: 42px 291px 0 25px;
+}
+
+.group_8 {
+  background-color: rgba(26, 32, 44, 1);
+  margin-top: 143px;
+  padding-top: 8px;
+}
+
+.text-wrapper_2 {
+  background-color: rgba(249, 213, 74, 1);
+  border-radius: 16px;
+  align-self: center;
+  width: 325px;
+  padding: 18px 148px 18px 148px;
+}
+
+.text_12 {
+  height: 20px;
+  overflow-wrap: break-word;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
+  letter-spacing: 0.20000000298023224px;
+  font-weight: NaN;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 19px;
+}
+
+.image_2 {
+  width: 375px;
+  height: 34px;
+  margin-top: 8px;
+}

@@ -1,0 +1,15 @@
+export default {
+    id: 'ID',
+    code: '编码',
+    name: '名',
+    value: '值',
+    typelist: '类别',
+    'typelist 0': '语言',
+    'typelist 1': '币种',
+    status: '状态',
+    'status 0': '禁用',
+    'status 1': '启用',
+    create_time: '创建时间',
+    update_time: '修改时间',
+    'quick Search Fields': 'ID',
+}

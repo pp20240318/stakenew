@@ -1,0 +1,16 @@
+export default {
+    id: 'ID',
+    language: '语言',
+    languagetable__name: '名',
+    title: '标题',
+    start_time: '开始时间',
+    end_time: '结束时间',
+    user_ids: '指定用户',
+    user__username: '用户名',
+    show: '是否显示',
+    'show 0': '关',
+    'show 1': '开',
+    create_time: '创建时间',
+    'quick Search Fields': 'ID',
+    content_text: '内容',
+}

@@ -1,0 +1,20 @@
+export default {
+    id: 'ID',
+    reference: '推荐人',
+    referencetable__username: '用户名',
+    user_id: '用户',
+    user__username: '用户名',
+    status: '状态',
+    'status opt0': '已过期',
+    'status opt1': '使用中',
+    source: '来源',
+    create_time: '创建时间',
+    expire_time: '过期时间',
+    product_id: '产品ID',
+    product__computer_name: '产品名称',
+    product__price: '购买金额',
+    valid_day: '有效天数',
+    bonus: '赠金',
+    'quick Search Fields': 'ID',
+    ai_attributes:'机器人属性'
+}

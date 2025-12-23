@@ -1,0 +1,70 @@
+-- 交易订单表
+  CREATE TABLE `ba_trade_orders` (
+      `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT COMMENT '订单ID',
+      `user_id` BIGINT UNSIGNED NOT NULL COMMENT '用户ID',
+      `coin_id` VARCHAR(50) NOT NULL COMMENT '币种ID (如: bitcoin, ethereum)',
+      `trading_symbol` VARCHAR(20) NOT NULL COMMENT '交易对符号 (如: BTCUSDT)',
+      `coin_symbol` VARCHAR(20) NOT NULL COMMENT '币种符号 (如: BTC, ETH)',
+
+      -- 交易方向和类型
+      `trade_type` ENUM('up', 'down') NOT NULL COMMENT '交易类型: up=买涨, down=买跌',
+
+      -- 金额相关
+      `amount` DECIMAL(20, 8) NOT NULL COMMENT '交易金额 (USDT)',
+      `profit_rate` DECIMAL(5, 2) NOT NULL DEFAULT 0 COMMENT '预期收益率 (如: 80, 81, 82, 83)',
+
+      -- 时间相关
+      `trade_time` VARCHAR(10) NOT NULL COMMENT '交易时间选项 (30S, M1, M2, M3)',
+      `total_seconds` INT UNSIGNED NOT NULL COMMENT '总倒计时秒数',
+      `remaining_seconds` INT UNSIGNED NOT NULL DEFAULT 0 COMMENT '剩余秒数',
+
+      -- 价格相关
+      `entry_price` DECIMAL(20, 8) NOT NULL COMMENT '开仓价格',
+      `exit_price` DECIMAL(20, 8) DEFAULT NULL COMMENT '平仓价格',
+
+      -- 结算相关
+      `profit_loss` DECIMAL(20, 8) DEFAULT NULL COMMENT '盈亏金额',
+      `result` ENUM('win', 'lose', 'draw') DEFAULT NULL COMMENT '结算结果',
+      `money_type` ENUM('1', '2') DEFAULT NULL COMMENT '交易金额类型: 1=真实余额, 2=虚拟余额',
+      -- 状态
+      `status` TINYINT UNSIGNED NOT NULL DEFAULT 0 COMMENT '订单状态: 0=待处理, 1=进行中, 2=已结算, 3=已取消',
+
+      -- 时间戳
+      `created_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+      `updated_at` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+      `expired_at` DATETIME NOT NULL COMMENT '到期时间',
+      `settled_at` DATETIME DEFAULT NULL COMMENT '结算时间',
+
+      PRIMARY KEY (`id`),
+      INDEX `idx_user_id` (`user_id`),
+      INDEX `idx_status` (`status`),
+      INDEX `idx_coin_id` (`coin_id`),
+      INDEX `idx_created_at` (`created_at`),
+      INDEX `idx_user_status` (`user_id`, `status`),
+      INDEX `idx_expired_at` (`expired_at`)
+  ) ENGINE=INNODB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='交易订单表';
+
+
+
+  添加ba_user字段virtualmoney  模拟余额
+
+
+
+//添加交易对表
+  create table `ba_soptcoin` (
+	`id` int (11),
+	`icon` varchar (1500),
+	`name` varchar (360),
+	`code` varchar (360),
+	`realname` varchar (360),
+	`type` int (2),
+	`status` int (2),
+	`created_at` datetime ,
+	`updated_at` datetime 
+); 
+insert into `ba_soptcoin` (`id`, `icon`, `name`, `code`, `realname`, `type`, `status`, `created_at`, `updated_at`) values('1',NULL,'BTC/USDT','BTCUSDT','Bitcoin','1','1','2025-11-18 16:49:29','2025-11-18 16:49:29');
+insert into `ba_soptcoin` (`id`, `icon`, `name`, `code`, `realname`, `type`, `status`, `created_at`, `updated_at`) values('2',NULL,'ETH/USDT','ETHUSDT','Ethereum','1','1','2025-11-18 16:49:49','2025-11-18 16:49:49');
+insert into `ba_soptcoin` (`id`, `icon`, `name`, `code`, `realname`, `type`, `status`, `created_at`, `updated_at`) values('3',NULL,'SUI/USDT','SUIUSDT','SuiCoin','1','1','2025-11-18 16:50:40','2025-11-18 16:50:40');
+insert into `ba_soptcoin` (`id`, `icon`, `name`, `code`, `realname`, `type`, `status`, `created_at`, `updated_at`) values('4',NULL,'XRP/USDT','XRPUSDT','Ripple','1','1','2025-11-18 16:51:04','2025-11-18 16:51:04');
+insert into `ba_soptcoin` (`id`, `icon`, `name`, `code`, `realname`, `type`, `status`, `created_at`, `updated_at`) values('5',NULL,'SOLU/USDT','SOLUUSDT','Soul Scanner','1','1','2025-11-18 16:51:27','2025-11-18 16:51:27');
+insert into `ba_soptcoin` (`id`, `icon`, `name`, `code`, `realname`, `type`, `status`, `created_at`, `updated_at`) values('6',NULL,'ADA/USDT','ADAUSDT','Ada Lovelace','1','1','2025-11-18 16:51:55','2025-11-18 16:51:55');

@@ -1,0 +1,16 @@
+export default {
+    id: 'id',
+    title: 'title',
+    content: 'content',
+    cover_image: 'cover_image',
+    status: 'status',
+    'status  0': 'status  0',
+    'status  1': 'status  1',
+    start_time: 'start_time',
+    end_time: 'end_time',
+    sort: 'sort',
+    view_count: 'view_count',
+    create_time: 'create_time',
+    update_time: 'update_time',
+    'quick Search Fields': 'id',
+}

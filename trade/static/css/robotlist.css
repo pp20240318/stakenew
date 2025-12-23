@@ -1,0 +1,133 @@
+.myhead3 {
+    display: flex;
+    padding: 6px 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(12,17,45,.12549019607843137);
+    height: 32px;
+    background-color: #0c112d
+}
+
+.myhead3 .imgb {
+    width: 30%
+}
+
+.myhead3 .img1 {
+    height: 20px
+}
+
+.myhead3 .text1 {
+    color: #fff;
+    font-weight: 700;
+    width: 40%;
+    text-align: center
+}
+
+.myhead3 .text2 {
+    color: #fff;
+    width: 30%;
+    text-align: right
+}
+
+.robotPage {
+    background-color: #0c112d;
+    min-height: 100vh
+}
+
+.robotPage .con1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #253341;
+    border-radius: 10px;
+    margin: 5px 15px
+}
+
+.robotPage .con1 .text1 {
+    color: #aaa;
+    font-size: 12px;
+    padding: 10px
+}
+
+.robotPage .con1 .active {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    border-bottom: 2px solid #7afef0
+}
+
+.robotPage .botlist {
+    width: 90%;
+    margin: auto
+}
+
+.robotPage .botlist .list {
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    background-color: #253341;
+    overflow: hidden;
+    position: relative
+}
+
+.robotPage .botlist .list .line1 {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    padding: 40px 24px 10px;
+    background-color: #e56161;
+    font-size: 14px;
+    font-weight: 700;
+    transform: rotate(312deg);
+    left: -47px;
+    top: -9px;
+    z-index: 2;
+    width: 80px;
+    text-align: center
+}
+
+.robotPage .botlist .list .line1-3 {
+    background-color: #0af
+}
+
+.robotPage .botlist .list .line1-2 {
+    background-color: #999
+}
+
+.robotPage .botlist .list .line2 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 10px
+}
+
+.robotPage .botlist .list .imgb {
+    height: 160px;
+    overflow: hidden;
+    border-radius: 10px
+}
+
+.robotPage .botlist .list .imgb .img1 {
+    width: 100%;
+    position: relative;
+    top: -40%
+}
+
+.robotPage .botlist .list .line3 {
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 12px
+}
+
+.robotPage .botlist .list .line4 {
+    text-align: center;
+    margin-top: 10px
+}
+
+.robotPage .botlist .list .line4 .text1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fc7744
+}

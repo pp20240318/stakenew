@@ -1,0 +1,16 @@
+export default {
+    id: 'id',
+    title: '标题',
+    imgurl: '图片',
+    sort: '排序',
+    type: '类型',
+    'type 0': '广告图',
+    'type 1': '轮播图',
+    content: '详情',
+    status: '状态',
+    'status 0': '禁用',
+    'status 1': '启用',
+    update_time: '更新时间',
+    create_time: '创建时间',
+    'quick Search Fields': 'id',
+}

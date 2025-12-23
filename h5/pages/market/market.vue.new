@@ -1,0 +1,932 @@
+<template>
+	<view class="market-container">
+		<!-- 顶部轮播广告 -->
+		<swiper class="banner" indicator-dots autoplay circular>
+			<swiper-item v-for="(item, index) in banners" :key="index">
+				<image :src="item.image" mode="aspectFill" class="banner-image"></image>
+			</swiper-item>
+		</swiper>
+		
+		<!-- 快捷功能入口 -->
+		<view class="quick-menu">
+			<view class="menu-item" @tap="navigateTo('/pages/trade/trade')">
+				<view class="menu-icon fa-icon">
+					<text class="fa-icon-inner fa fa-exchange-alt"></text>
+				</view>
+				<text class="menu-text">买入/卖出</text>
+			</view>
+			<view class="menu-item" @tap="navigateTo('/pages/exchange/exchange')">
+				<view class="menu-icon fa-icon">
+					<text class="fa-icon-inner fa fa-building-columns"></text>
+				</view>
+				<text class="menu-text">交易所</text>
+			</view>
+			<view class="menu-item" @tap="navigateTo('/pages/assets/assets')">
+				<view class="menu-icon fa-icon">
+					<text class="fa-icon-inner fa fa-wallet"></text>
+				</view>
+				<text class="menu-text">钱包</text>
+			</view>
+			<view class="menu-item" @tap="navigateTo('/pages/invite/invite')">
+				<view class="menu-icon fa-icon">
+					<text class="fa-icon-inner fa fa-user-plus"></text>
+				</view>
+				<text class="menu-text">邀�?/text>
+			</view>
+		</view>
+		
+		<!-- 热门币种 -->
+		<view class="hot-coins">
+			<view class="section-header">
+				<text class="section-title">热门币种</text>
+				<text class="view-all" @tap="navigateTo('/pages/market/all')">查看全部</text>
+			</view>
+			
+			<view class="coin-tabs">
+				<text 
+					v-for="(tab, index) in marketTabs" 
+					:key="index" 
+					:class="['tab-item', {active: currentTab === tab.value}]"
+					@tap="changeTab(tab.value)"
+				>{{ tab.label }}</text>
+			</view>
+			
+			<view class="coin-list">
+				<view class="coin-item" v-for="(coin, index) in filteredCoins" :key="index" @tap="navigateToCoin(coin)">
+					<view class="coin-info">
+						<image :src="coin.image" class="coin-icon"></image>
+						<view class="coin-details">
+							<text class="coin-name">{{ coin.name }}</text>
+							<text class="coin-symbol">{{ coin.symbol.toUpperCase() }}</text>
+						</view>
+					</view>
+					
+					<view class="coin-chart">
+						<view class="chart-placeholder" :class="{
+							'up-chart': coin.price_change_percentage_24h > 0,
+							'down-chart': coin.price_change_percentage_24h < 0
+						}"></view>
+					</view>
+					
+					<view class="coin-price">
+						<text class="price-value">${{ formatPrice(coin.current_price) }}</text>
+						<text :class="['price-change', {
+							'increase': coin.price_change_percentage_24h > 0,
+							'decrease': coin.price_change_percentage_24h < 0
+						}]">
+							{{ coin.price_change_percentage_24h > 0 ? '+' : '' }}{{ formatChange(coin.price_change_percentage_24h) }}
+						</text>
+					</view>
+				</view>
+			</view>
+		</view>
+		
+		<!-- 币种列表 -->
+		<view class="coins-section">
+			<view class="section-header">
+				<text class="section-title">所有市�?/text>
+				<view class="search-btn" @tap="showSearch">
+					<text class="fa fa-search"></text>
+				</view>
+			</view>
+			
+			<view class="coin-filter">
+				<view class="sort-row">
+					<view class="sort-item" @tap="sortBy('name')">
+						<text class="sort-title">名称</text>
+						<text class="sort-arrow" v-if="sortField === 'name'">
+							<text class="fa" :class="sortDirection === 'asc' ? 'fa-sort-up' : 'fa-sort-down'"></text>
+						</text>
+					</view>
+					<view class="sort-item" @tap="sortBy('current_price')">
+						<text class="sort-title">最新价</text>
+						<text class="sort-arrow" v-if="sortField === 'current_price'">
+							<text class="fa" :class="sortDirection === 'asc' ? 'fa-sort-up' : 'fa-sort-down'"></text>
+						</text>
+					</view>
+					<view class="sort-item" @tap="sortBy('price_change_percentage_24h')">
+						<text class="sort-title">24h涨跌</text>
+						<text class="sort-arrow" v-if="sortField === 'price_change_percentage_24h'">
+							<text class="fa" :class="sortDirection === 'asc' ? 'fa-sort-up' : 'fa-sort-down'"></text>
+						</text>
+					</view>
+				</view>
+				
+				<view class="coin-table">
+					<view class="coin-row" v-for="(coin, index) in sortedCoins" :key="index" @tap="navigateToCoin(coin)">
+						<view class="coin-cell name-cell">
+							<image :src="coin.image" class="small-icon"></image>
+							<view class="coin-name-group">
+								<text class="coin-full-name">{{ coin.name }}</text>
+								<text class="coin-abbr">{{ coin.symbol.toUpperCase() }}</text>
+							</view>
+						</view>
+						<view class="coin-cell price-cell">
+							<text class="current-price">${{ formatPrice(coin.current_price) }}</text>
+						</view>
+						<view class="coin-cell change-cell">
+							<text :class="['change-value', {
+								'increase': coin.price_change_percentage_24h > 0,
+								'decrease': coin.price_change_percentage_24h < 0
+							}]">
+								{{ coin.price_change_percentage_24h > 0 ? '+' : '' }}{{ formatChange(coin.price_change_percentage_24h) }}
+							</text>
+						</view>
+					</view>
+				</view>
+			</view>
+		</view>
+		
+		<!-- 加载中提�?-->
+		<view class="loading-container" v-if="loading">
+			<view class="loading-icon">
+				<text class="fa fa-spinner fa-spin"></text>
+			</view>
+			<text class="loading-text">加载�?..</text>
+		</view>
+	</view>
+</template>
+
+<script>
+	import api from '@/utils/api.js'; // 引入API工具
+
+	export default {
+		data() {
+			return {
+				loading: false,
+				apiError: false,
+				// 轮播�?
+				banners: [
+					{
+						url: '/static/images/banners/banner1.png',
+						link: '/pages/invite/invite'
+					},
+					{
+						url: '/static/images/banners/banner2.png',
+						link: '/pages/assets/assets'
+					}
+				],
+				// 时间周期选项
+				timePeriods: [
+					{ label: '24h', value: '24h' },
+					{ label: '7d', value: '7d' },
+					{ label: '30d', value: '30d' },
+					{ label: '1y', value: '1y' }
+				],
+				currentPeriod: '24h',
+				
+				// 市场分类选项
+				marketTabs: [
+					{ label: '热门', value: 'hot' },
+					{ label: '涨幅�?, value: 'gainers' },
+					{ label: '跌幅�?, value: 'losers' },
+					{ label: '交易�?, value: 'volume' }
+				],
+				currentTab: 'hot',
+				
+				// 排序选项
+				sortField: 'market_cap_rank',
+				sortDirection: 'asc',
+				
+				// 币种数据
+				coins: [],
+				
+				// 市场概览数据
+				marketData: {
+					btcDominance: 0,
+					btcDominanceChange: 0,
+					totalMarketCap: 0,
+					marketCapChangePercentage24h: 0,
+					totalVolume: 0,
+					volumeChangePercentage24h: 0
+				}
+			}
+		},
+		computed: {
+			// 根据分类筛选的币种
+			filteredCoins() {
+				if (!this.coins || this.coins.length === 0) {
+					return [];
+				}
+				
+				const limit = 5; // 显示数量限制
+				let result = [...this.coins];
+				
+				if (this.currentTab === 'hot') {
+					// 使用市值排名筛选热门币�?
+					result.sort((a, b) => (a.market_cap_rank || Infinity) - (b.market_cap_rank || Infinity));
+				} else if (this.currentTab === 'gainers') {
+					// 涨幅�?- �?4h涨幅排序（从高到低）
+					result.sort((a, b) => (b.price_change_percentage_24h || 0) - (a.price_change_percentage_24h || 0));
+				} else if (this.currentTab === 'losers') {
+					// 跌幅�?- �?4h跌幅排序（从低到高）
+					result.sort((a, b) => (a.price_change_percentage_24h || 0) - (b.price_change_percentage_24h || 0));
+				} else if (this.currentTab === 'volume') {
+					// 交易量榜 - �?4h交易量排序（从高到低�?
+					result.sort((a, b) => (b.total_volume || 0) - (a.total_volume || 0));
+				}
+				
+				return result.slice(0, limit);
+			},
+			
+			// 排序后的币种列表
+			sortedCoins() {
+				if (!this.coins || this.coins.length === 0) {
+					return [];
+				}
+				
+				const result = [...this.coins];
+				
+				// 按字段排�?
+				result.sort((a, b) => {
+					let aValue = a[this.sortField];
+					let bValue = b[this.sortField];
+					
+					// 处理特殊字段
+					if (this.sortField === 'name') {
+						aValue = a.name.toLowerCase();
+						bValue = b.name.toLowerCase();
+						return this.sortDirection === 'asc' ? 
+							aValue.localeCompare(bValue) : 
+							bValue.localeCompare(aValue);
+					}
+					
+					// 数值比�?
+					const comparison = (aValue || 0) - (bValue || 0);
+					return this.sortDirection === 'asc' ? comparison : -comparison;
+				});
+				
+				return result.slice(0, 20); // 限制显示数量
+			}
+		},
+		onLoad() {
+			this.refreshData();
+		},
+		methods: {
+			// 跳转到币种详情页
+			goToCoin(coin) {
+				uni.navigateTo({
+					url: `/pages/market/detail?id=${coin.id}`
+				});
+			},
+			
+			// 获取币种列表数据
+			getCoinList() {
+				this.loading = true;
+				this.apiError = false;
+				
+				// 使用API工具获取币种数据，加入缓存时间参�?
+				api.getCoinMarkets({
+					vs_currency: 'usd',
+					order: 'market_cap_desc',
+					per_page: 50,
+					sparkline: false,
+					price_change_percentage: '24h'
+				}, 5) // 使用5分钟缓存
+				.then(data => {
+					if (data && data.length > 0) {
+						this.coins = data;
+					} else {
+						// 处理空数据情�?
+						this.apiError = true;
+						uni.showToast({
+							title: '没有获取到市场数�?,
+							icon: 'none'
+						});
+					}
+				})
+				.catch(err => {
+					console.error('Failed to get coin list:', err);
+					this.apiError = true;
+					uni.showToast({
+						title: '获取市场数据失败，请稍后重试',
+						icon: 'none'
+					});
+				})
+				.finally(() => {
+					this.loading = false;
+					
+					// 如果自动刷新状态被设置�?0分钟后再次刷�?
+					if (this.autoRefresh) {
+						clearTimeout(this.refreshTimer);
+						this.refreshTimer = setTimeout(() => {
+							this.refreshData();
+						}, 600000); // 10分钟刷新一�?
+					}
+				});
+			},
+			
+			// 获取全球市场数据
+			getMarketData() {
+				// 使用API工具获取全球市场数据，加入缓存时间参�?
+				api.getGlobalMarketData(10) // 使用10分钟缓存
+				.then(data => {
+					console.log('Global market data response:', data); // 调试日志
+					
+					// CoinGecko API返回的数据可能在data字段�?
+					const marketData = data && data.data ? data.data : data;
+					
+					if (marketData) {
+						try {
+							// 处理CoinGecko的全球市场数据结�?
+							this.marketData = {
+								totalMarketCap: marketData.total_market_cap?.usd || 0,
+								totalVolume: marketData.total_volume?.usd || 0,
+								btcDominance: marketData.market_cap_percentage?.btc || 0
+							};
+						} catch (error) {
+							console.error('Error parsing market data:', error);
+							// 设置默认值，确保UI不会崩溃
+							this.marketData = {
+								totalMarketCap: 0,
+								totalVolume: 0,
+								btcDominance: 0
+							};
+						}
+					}
+				})
+				.catch(err => {
+					console.error('Failed to get global market data:', err);
+					// 确保错误情况下也有默认�?
+					this.marketData = {
+						totalMarketCap: 0,
+						totalVolume: 0,
+						btcDominance: 0
+					};
+				});
+			},
+			
+			// 刷新数据
+			refreshData() {
+				// 避免频繁刷新
+				if (this.loading) return;
+				
+				// 显示刷新提示
+				uni.showLoading({
+					title: '正在刷新...'
+				});
+				
+				// 清除API缓存以获取最新数�?
+				api.clearCache('/coins/markets');
+				api.clearCache('/global');
+				
+				this.getCoinList();
+				this.getMarketData();
+				
+				setTimeout(() => {
+					uni.hideLoading();
+				}, 1000);
+			},
+			
+			// 格式化价格为美元形式
+			formatPrice(price) {
+				if (price === undefined || price === null) return '$0.00';
+				
+				if (price < 0.01) {
+					return '$' + price.toFixed(6);
+				} else if (price < 1) {
+					return '$' + price.toFixed(4);
+				} else if (price < 10) {
+					return '$' + price.toFixed(2);
+				} else if (price < 1000) {
+					return '$' + price.toFixed(2);
+				} else if (price < 10000) {
+					return '$' + price.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+				} else {
+					return '$' + price.toLocaleString(undefined, { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+				}
+			},
+			
+			// 格式化大数字（用于市值和交易量）
+			formatLargeNumber(num) {
+				if (num === undefined || num === null) return '$0';
+				
+				if (num >= 1000000000000) {
+					return '$' + (num / 1000000000000).toFixed(2) + 'T';
+				} else if (num >= 1000000000) {
+					return '$' + (num / 1000000000).toFixed(2) + 'B';
+				} else if (num >= 1000000) {
+					return '$' + (num / 1000000).toFixed(2) + 'M';
+				} else if (num >= 1000) {
+					return '$' + (num / 1000).toFixed(2) + 'K';
+				} else {
+					return '$' + num.toFixed(2);
+				}
+			},
+			
+			// 格式化百分比变化
+			formatChange(change) {
+				if (change === undefined || change === null) return '0.00%';
+				
+				let symbol = change >= 0 ? '+' : '';
+				return symbol + change.toFixed(2) + '%';
+			},
+			
+			// 改变时间周期
+			changePeriod(period) {
+				this.currentPeriod = period;
+				// 如果需要根据时间周期刷新数据，可以在这里添加代�?
+			},
+			
+			// 改变市场分类
+			changeTab(tab) {
+				this.currentTab = tab;
+			},
+			
+			// 改变排序方式
+			sortBy(field) {
+				if (this.sortField === field) {
+					// 切换排序方向
+					this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc';
+				} else {
+					// 设置新的排序字段
+					this.sortField = field;
+					// 默认排序方向
+					this.sortDirection = field === 'name' ? 'asc' : 'desc';
+				}
+			},
+			
+			// 显示搜索
+			showSearch() {
+				uni.showToast({
+					title: '搜索功能开发中',
+					icon: 'none'
+				});
+			},
+			
+			// 导航到币种详�?
+			navigateToCoin(coin) {
+				uni.navigateTo({
+					url: `/pages/market/detail?id=${coin.id}`
+				});
+			},
+			
+			// 导航到指定页�?
+			navigateTo(url) {
+				uni.navigateTo({
+					url: url
+				});
+			},
+			
+			// 格式化价�?
+			formatPrice(price) {
+				if (price === undefined || price === null) return '0.00';
+				
+				if (Math.abs(price) < 0.01) {
+					return parseFloat(price).toFixed(6);
+				} else if (Math.abs(price) < 1) {
+					return parseFloat(price).toFixed(4);
+				} else if (Math.abs(price) < 10) {
+					return parseFloat(price).toFixed(3);
+				} else {
+					return parseFloat(price).toFixed(2);
+				}
+			},
+			
+			// 格式化大数�?
+			formatValue(value) {
+				if (!value) return '0';
+				
+				if (value >= 1000000000000) {
+					return (value / 1000000000000).toFixed(2) + 'T';
+				} else if (value >= 1000000000) {
+					return (value / 1000000000).toFixed(2) + 'B';
+				} else if (value >= 1000000) {
+					return (value / 1000000).toFixed(2) + 'M';
+				} else if (value >= 1000) {
+					return (value / 1000).toFixed(2) + 'K';
+				} else {
+					return value.toFixed(2);
+				}
+			}
+		},
+		// 下拉刷新
+		onPullDownRefresh() {
+			this.refreshData();
+			setTimeout(() => {
+				uni.stopPullDownRefresh();
+			}, 1000);
+		}
+	}
+</script>
+
+<style>
+.market-container {
+	padding-bottom: 30rpx;
+	background-color: #F5F5F5;
+}
+
+/* 轮播�?*/
+.banner {
+	height: 300rpx;
+	width: 100%;
+}
+
+.banner-image {
+	width: 100%;
+	height: 100%;
+}
+
+/* 快捷菜单 */
+.quick-menu {
+	display: flex;
+	justify-content: space-around;
+	padding: 20rpx;
+	background-color: #FFFFFF;
+	margin-bottom: 20rpx;
+}
+
+.menu-item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.menu-icon {
+	width: 80rpx;
+	height: 80rpx;
+	border-radius: 50%;
+	margin-bottom: 10rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.fa-icon {
+	background-color: #007AFF;
+	color: #FFFFFF;
+}
+
+.fa-icon-inner {
+	font-size: 36rpx;
+}
+
+.menu-text {
+	font-size: 24rpx;
+	color: #333333;
+}
+
+/* 市场概览 */
+.market-overview {
+	background-color: #FFFFFF;
+	padding: 30rpx;
+	margin-bottom: 20rpx;
+}
+
+.overview-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20rpx;
+}
+
+.section-title {
+	font-size: 32rpx;
+	font-weight: bold;
+	color: #333333;
+}
+
+.time-filter {
+	display: flex;
+}
+
+.time-item {
+	font-size: 24rpx;
+	color: #999999;
+	padding: 6rpx 16rpx;
+	border-radius: 20rpx;
+	margin-left: 10rpx;
+}
+
+.time-item.active {
+	background-color: #007AFF;
+	color: #FFFFFF;
+}
+
+.market-stats {
+	display: flex;
+	justify-content: space-between;
+}
+
+.stat-card {
+	flex: 1;
+	background-color: #F8F9FA;
+	padding: 20rpx;
+	border-radius: 12rpx;
+	margin: 0 10rpx;
+}
+
+.stat-card:first-child {
+	margin-left: 0;
+}
+
+.stat-card:last-child {
+	margin-right: 0;
+}
+
+.stat-label {
+	font-size: 24rpx;
+	color: #999999;
+	margin-bottom: 10rpx;
+	display: block;
+}
+
+.stat-value {
+	font-size: 32rpx;
+	font-weight: bold;
+	color: #333333;
+	display: block;
+	margin-bottom: 6rpx;
+}
+
+.stat-change {
+	font-size: 22rpx;
+	padding: 2rpx 8rpx;
+	border-radius: 10rpx;
+}
+
+.increase {
+	background-color: rgba(52, 199, 89, 0.1);
+	color: #34C759;
+}
+
+.decrease {
+	background-color: rgba(255, 59, 48, 0.1);
+	color: #FF3B30;
+}
+
+/* 热门币种 */
+.hot-coins {
+	background-color: #FFFFFF;
+	padding: 30rpx;
+	margin-bottom: 20rpx;
+}
+
+.section-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20rpx;
+}
+
+.view-all {
+	font-size: 24rpx;
+	color: #007AFF;
+}
+
+.coin-tabs {
+	display: flex;
+	margin-bottom: 20rpx;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+.tab-item {
+	font-size: 26rpx;
+	color: #666666;
+	padding: 10rpx 20rpx;
+	margin-right: 20rpx;
+	border-radius: 20rpx;
+}
+
+.tab-item.active {
+	background-color: #007AFF;
+	color: #FFFFFF;
+}
+
+.coin-list {
+	display: flex;
+	flex-direction: column;
+}
+
+.coin-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20rpx 0;
+	border-bottom: 1rpx solid #F0F0F0;
+}
+
+.coin-item:last-child {
+	border-bottom: none;
+}
+
+.coin-info {
+	display: flex;
+	align-items: center;
+	flex: 3;
+}
+
+.coin-icon {
+	width: 60rpx;
+	height: 60rpx;
+	border-radius: 30rpx;
+	margin-right: 15rpx;
+}
+
+.coin-details {
+	display: flex;
+	flex-direction: column;
+}
+
+.coin-name {
+	font-size: 28rpx;
+	color: #333333;
+	font-weight: bold;
+}
+
+.coin-symbol {
+	font-size: 24rpx;
+	color: #999999;
+}
+
+.coin-chart {
+	flex: 3;
+	height: 60rpx;
+	padding: 0 20rpx;
+}
+
+.chart-placeholder {
+	height: 100%;
+	background: linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.05) 50%, transparent);
+	border-radius: 4rpx;
+}
+
+.up-chart {
+	background: linear-gradient(90deg, transparent, rgba(52, 199, 89, 0.2) 50%, transparent);
+}
+
+.down-chart {
+	background: linear-gradient(90deg, transparent, rgba(255, 59, 48, 0.2) 50%, transparent);
+}
+
+.coin-price {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.price-value {
+	font-size: 28rpx;
+	color: #333333;
+	font-weight: bold;
+	margin-bottom: 6rpx;
+}
+
+.price-change {
+	font-size: 22rpx;
+	padding: 2rpx 8rpx;
+	border-radius: 10rpx;
+}
+
+/* 币种列表 */
+.coins-section {
+	background-color: #FFFFFF;
+	padding: 30rpx;
+}
+
+.search-btn {
+	width: 60rpx;
+	height: 60rpx;
+	background-color: #F5F5F5;
+	border-radius: 30rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 28rpx;
+	color: #666666;
+}
+
+.coin-filter {
+	margin-top: 20rpx;
+}
+
+.sort-row {
+	display: flex;
+	border-bottom: 1rpx solid #F0F0F0;
+	padding-bottom: 15rpx;
+	margin-bottom: 10rpx;
+}
+
+.sort-item {
+	flex: 1;
+	display: flex;
+	align-items: center;
+}
+
+.sort-item:nth-child(1) {
+	flex: 1.5;
+}
+
+.sort-title {
+	font-size: 26rpx;
+	color: #999999;
+	margin-right: 6rpx;
+}
+
+.sort-arrow {
+	font-size: 22rpx;
+	color: #666666;
+}
+
+.coin-table {
+	display: flex;
+	flex-direction: column;
+}
+
+.coin-row {
+	display: flex;
+	padding: 15rpx 0;
+	border-bottom: 1rpx solid #F0F0F0;
+	align-items: center;
+}
+
+.coin-row:last-child {
+	border-bottom: none;
+}
+
+.coin-cell {
+	flex: 1;
+}
+
+.name-cell {
+	flex: 1.5;
+	display: flex;
+	align-items: center;
+}
+
+.small-icon {
+	width: 40rpx;
+	height: 40rpx;
+	border-radius: 20rpx;
+	margin-right: 10rpx;
+}
+
+.coin-name-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.coin-full-name {
+	font-size: 26rpx;
+	color: #333333;
+}
+
+.coin-abbr {
+	font-size: 22rpx;
+	color: #999999;
+}
+
+.price-cell {
+	text-align: center;
+}
+
+.current-price {
+	font-size: 26rpx;
+	font-weight: bold;
+	color: #333333;
+}
+
+.change-cell {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.change-value {
+	font-size: 24rpx;
+	padding: 4rpx 10rpx;
+	border-radius: 10rpx;
+}
+
+/* Loading状�?*/
+.loading-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(255, 255, 255, 0.8);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 9999;
+}
+
+.loading-icon {
+	font-size: 60rpx;
+	color: #007AFF;
+	margin-bottom: 20rpx;
+}
+
+.loading-text {
+	font-size: 28rpx;
+	color: #666666;
+}
+
+/* FontAwesome图标 */
+.fa {
+	font-family: 'FontAwesome';
+}
+</style> 

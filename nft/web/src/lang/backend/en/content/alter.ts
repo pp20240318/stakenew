@@ -1,0 +1,16 @@
+export default {
+    id: 'id',
+    language: 'language',
+    languagetable__name: 'name',
+    title: 'title',
+    start_time: 'start_time',
+    end_time: 'end_time',
+    user_ids: 'user_ids',
+    user__username: 'username',
+    show: 'show',
+    'show 0': 'show 0',
+    'show 1': 'show 1',
+    create_time: 'create_time',
+    'quick Search Fields': 'id',
+    content_text: 'content_text',
+}

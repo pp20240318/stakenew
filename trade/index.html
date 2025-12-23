@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<script>
+			var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+				CSS.supports('top: constant(a)'))
+			document.write(
+				'<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+				(coverSupport ? ', viewport-fit=cover' : '') + '" />')
+		</script>
+		 
+		<link href="/static/css/app.e1b3fbb0.css" rel="preload" as="style">
+		<link href="/static/css/chunk-vendors.96c5d46f.css" rel="preload" as="style"> 
+		<link href="/static/css/chunk-vendors.96c5d46f.css" rel="stylesheet">
+		<link href="/static/css/app.e1b3fbb0.css" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="/static/css/chunk-3b7d96d6.2304a634.css"> 
+		<script src="https://plugin-code.salesmartly.com/js/project_317154_325788_1745773439.js"></script>
+		
+		<!-- TradingView Lightweight Charts - 轻量级图表库 -->
+		<script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
+		<style type="text/css">
+			.icon {
+				width: 1em;
+				height: 1em;
+				vertical-align: -0.15em;
+				fill: currentColor;
+				overflow: hidden;
+			}
+		</style>
+		<!--preload-links-->
+		<!--app-context-->
+	</head>
+	<body>
+		<div id="app"><!--app-html--></div>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html> 
+

@@ -1,0 +1,62 @@
+.myhead3 {
+    display: flex;
+    padding: 6px 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(12,17,45,.12549019607843137);
+    height: 32px;
+    background-color: #0c112d
+}
+
+.myhead3 .imgb {
+    width: 30%
+}
+
+.myhead3 .img1 {
+    height: 20px
+}
+
+.myhead3 .text1 {
+    color: #fff;
+    font-weight: 700;
+    width: 40%;
+    text-align: center
+}
+
+.myhead3 .text2 {
+    color: #fff;
+    width: 30%;
+    text-align: right
+}
+
+.bgview {
+    padding: 15px 20px 0;
+    background: #253341;
+    min-height: 100vh
+}
+
+.titleView {
+    font-family: PingFangSC-Medium;
+    font-size: 24px;
+    color: #6e3fcc;
+    text-align: left
+}
+
+.timeView {
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #ddd
+}
+
+.lineView {
+    margin: 19px 0 16.5px;
+    height: 1px;
+    background-color: #666
+}
+
+.detaileView {
+    margin: 0;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #ddd
+}

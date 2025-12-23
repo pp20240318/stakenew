@@ -1,0 +1,63 @@
+/*
+* Remix Icon v3.5.0
+* https://remixicon.com
+* https://github.com/Remix-Design/RemixIcon
+*
+* Copyright RemixIcon.com
+* Released under the Apache License Version 2.0
+*/
+
+@font-face {
+  font-family: "remixicon";
+  src: url('https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.woff') format('woff');
+  font-display: swap;
+}
+
+[class^="ri-"],
+[class*="ri-"] {
+  font-family: 'remixicon' !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 邀请好友图标 */
+.ri-user-add-line:before { content: "\f25f"; }
+
+/* 系统设置图标 */
+.ri-settings-4-line:before { content: "\f1d4"; }
+
+/* 客服图标 */
+.ri-customer-service-2-line:before { content: "\ebaa"; }
+
+/* 退出登录图标 */
+.ri-logout-box-r-line:before { content: "\ef09"; }
+
+/* 其他可能需要的图标 */
+.ri-notification-line:before { content: "\ef29"; }
+.ri-arrow-right-s-line:before { content: "\ea6e"; }
+.ri-user-line:before { content: "\f25c"; }
+.ri-money-dollar-circle-line:before { content: "\ef1e"; }
+.ri-bar-chart-2-line:before { content: "\ea9d"; }
+.ri-trophy-line:before { content: "\f22e"; }
+.ri-team-line:before { content: "\f211"; }
+.ri-home-line:before { content: "\eeaa"; }
+.ri-apps-line:before { content: "\ea67"; }
+.ri-question-line:before { content: "\f125"; }
+.ri-information-line:before { content: "\eeb4"; }
+
+/* 加密货币图标 - 用于底部导航栏 */
+.ri-coin-line:before { content: "\eb28"; }
+.ri-bitcoin-line:before { content: "\eaed"; }
+.ri-exchange-dollar-line:before { content: "\ebe0"; }
+.ri-coins-line:before { content: "\eb2d"; }
+.ri-exchange-line:before { content: "\ebde"; }
+.ri-funds-line:before { content: "\ec86"; }
+.ri-money-cny-circle-line:before { content: "\ef1f"; }
+.ri-stock-line:before { content: "\f1fb"; }
+.ri-currency-line:before { content: "\eb8d"; }
+.ri-wallet-3-line:before { content: "\f27e"; }
+.ri-currency-fill:before { content: "\eb8c"; }
+.ri-exchange-box-line:before { content: "\ebdb"; }
+.ri-bank-card-line:before { content: "\ea96"; } 

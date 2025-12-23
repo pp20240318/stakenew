@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "vue-i18n": "^9.2.2"
+  }
+}

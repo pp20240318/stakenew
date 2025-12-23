@@ -1,0 +1,551 @@
+.page {
+  background-color: rgba(26, 32, 44, 1);
+  position: relative;
+  width: 100vw;
+  height: 216.54vw;
+  overflow: hidden;
+}
+
+.group_50 {
+}
+
+.group_51 {
+  position: relative;
+  margin-bottom: 22.14vw;
+  padding: 4.26vw 0 1.6vw 5.33vw;
+}
+
+.box_56 {
+  margin-right: 5.6vw;
+}
+
+.text_1 {
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 1);
+  font-size: 3.73vw;
+  letter-spacing: -0.2800000011920929px;
+  text-transform: lowercase;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 4.54vw;
+}
+
+.thumbnail_1 {
+  width: 4.54vw;
+  height: 2.94vw;
+  margin: 0.53vw 0 1.06vw 65.86vw;
+}
+
+.thumbnail_2 {
+  width: 4vw;
+  height: 2.94vw;
+  margin: 0.26vw 0 1.33vw 1.33vw;
+}
+
+.image_1 {
+  width: 6.4vw;
+  height: 2.94vw;
+  margin: 0.26vw 0 1.33vw 1.33vw;
+}
+
+.box_57 {
+  width: 90.4vw;
+  margin: 6.13vw 4.26vw 0 0;
+}
+
+.image-text_145 {
+  width: 46.4vw;
+}
+
+.label_25 {
+  width: 6.67vw;
+  height: 9.07vw;
+  margin-top: 0.54vw;
+}
+
+.text-group_1 {
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 1);
+  font-size: 5.33vw;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 6.4vw;
+}
+
+.label_2 {
+  width: 6.4vw;
+  height: 6.4vw;
+  margin-bottom: 3.2vw;
+}
+
+.group_3 {
+  border-radius: 10px;
+  background-image: url(./img/cea2979a5739494fa5707b0695400362_mergeImage.png);
+  width: 89.34vw;
+  height: 42.67vw;
+  margin: 5.33vw 5.33vw 0 0;
+}
+
+.box_58 {
+  width: 89.34vw;
+  margin: 5.33vw 5.33vw 0 0;
+}
+
+.block_38 {
+}
+
+.image_2 {
+  width: 41.6vw;
+  height: 21.34vw;
+  margin-left: 1.34vw;
+}
+
+.block_1 {
+  background: url(./img/SketchPnga2dbaa9dc25f4dc0b8f61a81eb33ce51c96c18d475a4b70002dd5f5a529009f8.png)
+    100% no-repeat;
+  background-size: 100% 100%;
+  margin-top: 3.2vw;
+  padding: 2.66vw 7.46vw 2.13vw 5.06vw;
+}
+
+.image-text_146 {
+  width: 30.4vw;
+}
+
+.label_3 {
+  width: 10.67vw;
+  height: 10.67vw;
+  margin-bottom: 0.54vw;
+}
+
+.text-group_87 {
+}
+
+.text_2 {
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 1);
+  font-size: 3.73vw;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 5.34vw;
+  margin-right: 0.54vw;
+}
+
+.text_3 {
+  overflow-wrap: break-word;
+  color: rgba(134, 134, 134, 1);
+  font-size: 3.2vw;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 4.54vw;
+  margin-top: 1.34vw;
+}
+
+.block_39 {
+}
+
+.section_1 {
+  background: url(./img/SketchPnge0b3a0d98b79d507c2711caf38d265656fc70dff990fe5bc0ddeee34e5decc50.png)
+    100% no-repeat;
+  background-size: 100% 100%;
+  padding: 2.66vw 7.46vw 2.13vw 3.73vw;
+}
+
+.image-text_147 {
+  width: 32vw;
+}
+
+.label_4 {
+  width: 12.27vw;
+  height: 10.67vw;
+  margin-bottom: 0.54vw;
+}
+
+.text-group_88 {
+}
+
+.text_4 {
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 1);
+  font-size: 3.73vw;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 5.34vw;
+  margin-right: 0.8vw;
+}
+
+.text_5 {
+  overflow-wrap: break-word;
+  color: rgba(134, 134, 134, 1);
+  font-size: 3.2vw;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 4.54vw;
+  margin-top: 1.34vw;
+}
+
+.section_2 {
+  width: 43.2vw;
+  background: url(./img/SketchPngbac579b8ab09511150404bd2446faaf3b8f8c3b2368ee94357ec078a478a9dc5.png)
+    100% no-repeat;
+  background-size: 100% 100%;
+  margin-top: 3.2vw;
+  padding: 0.8vw 5.33vw 0.53vw 0;
+}
+
+.image_14 {
+  width: 20vw;
+  height: 20vw;
+}
+
+.text-group_89 {
+  margin: 4.53vw 0 4.26vw 0;
+}
+
+.text_6 {
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 1);
+  font-size: 3.73vw;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 5.34vw;
+  margin-right: 2.94vw;
+}
+
+.text_7 {
+  overflow-wrap: break-word;
+  color: rgba(134, 134, 134, 1);
+  font-size: 3.2vw;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 4.54vw;
+  margin-top: 1.34vw;
+}
+
+.group_7 {
+  background: url(./img/SketchPnga2664e05fb0c6d5b3143cc2294051c2b268adab381ae97a76b6974540eef8917.png)
+    100% no-repeat;
+  background-size: 100% 100%;
+  margin: 5.33vw 5.33vw 0 0;
+  padding: 2.93vw 4.8vw 2.66vw 5.33vw;
+}
+
+.image-text_148 {
+  width: 79.2vw;
+}
+
+.label_5 {
+  width: 6.4vw;
+  height: 6.4vw;
+}
+
+.text-group_5 {
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 1);
+  font-size: 3.73vw;
+  letter-spacing: -0.4000000059604645px;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 5.34vw;
+  margin-top: 0.54vw;
+}
+
+.box_59 {
+  width: 94.67vw;
+  margin-top: 5.34vw;
+}
+
+.box_1 {
+  background: url(./img/SketchPng14593eae6956e29e13f8a67afb677d55b11146a419f51e44c7a8989aec17b174.png)
+    100% no-repeat;
+  background-size: 100% 100%;
+  padding: 3.73vw 3.2vw 2.93vw 3.73vw;
+}
+
+.image-text_149 {
+  width: 27.2vw;
+  margin-right: 0.54vw;
+}
+
+.label_6 {
+  width: 7.47vw;
+  height: 7.47vw;
+}
+
+.text-group_6 {
+  overflow-wrap: break-word;
+  color: rgba(237, 242, 247, 1);
+  font-size: 3.2vw;
+  letter-spacing: 0.20000000298023224px;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 4.54vw;
+  margin-top: 1.87vw;
+}
+
+.image-text_150 {
+  margin-top: 1.87vw;
+}
+
+.image_4 {
+  width: 27.74vw;
+  height: 13.34vw;
+}
+
+.text-group_90 {
+  margin: 1.86vw 5.6vw 0 0;
+}
+
+.text_8 {
+  height: 5.34vw;
+  overflow-wrap: break-word;
+  color: rgba(237, 242, 247, 1);
+  font-size: 3.73vw;
+  letter-spacing: 0.20000000298023224px;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 5.07vw;
+}
+
+.text_9 {
+  overflow-wrap: break-word;
+  color: rgba(255, 107, 107, 1);
+  font-size: 3.2vw;
+  letter-spacing: 0.20000000298023224px;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 4vw;
+  margin-right: 9.6vw;
+}
+
+.box_2 {
+  background: url(./img/SketchPng14593eae6956e29e13f8a67afb677d55b11146a419f51e44c7a8989aec17b174.png)
+    100% no-repeat;
+  background-size: 100% 100%;
+  padding: 3.73vw 3.73vw 3.2vw 3.73vw;
+}
+
+.image-text_151 {
+  width: 27.2vw;
+}
+
+.label_20 {
+  width: 7.47vw;
+  height: 7.47vw;
+}
+
+.text_10 {
+  overflow-wrap: break-word;
+  color: rgba(237, 242, 247, 1);
+  font-size: 3.2vw;
+  letter-spacing: 0.20000000298023224px;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 4.54vw;
+  margin-top: 1.87vw;
+}
+
+.image-text_152 {
+  margin: 5.06vw 1.06vw 0 0;
+}
+
+.image_5 {
+  width: 26.14vw;
+  height: 9.07vw;
+}
+
+.text-group_8 {
+  height: 5.34vw;
+  overflow-wrap: break-word;
+  color: rgba(237, 242, 247, 1);
+  font-size: 3.73vw;
+  letter-spacing: 0.20000000298023224px;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 5.07vw;
+  margin: 2.93vw 8.53vw 0 0;
+}
+
+.text_11 {
+  height: 3.74vw;
+  overflow-wrap: break-word;
+  color: rgba(51, 212, 157, 1);
+  font-size: 3.2vw;
+  letter-spacing: 0.20000000298023224px;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 4vw;
+  margin-right: 15.2vw;
+}
+
+.box_3 {
+  position: relative;
+  background: url(./img/SketchPngc5e995b930ba4dddd646157695da2f4ae1dcfa61d49a86686b9028ba08118424.png)
+    100% no-repeat;
+  background-size: 100% 100%;
+  padding: 3.73vw 0 3.2vw 3.73vw;
+}
+
+.box_60 {
+  width: 15.2vw;
+}
+
+.label_21 {
+  width: 7.47vw;
+  height: 7.47vw;
+}
+
+.text_21 {
+  overflow-wrap: break-word;
+  color: rgba(237, 242, 247, 1);
+  font-size: 3.2vw;
+  letter-spacing: 0.20000000298023224px;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 4.54vw;
+  margin-top: 1.87vw;
+}
+
+.text_13 {
+  height: 3.74vw;
+  overflow-wrap: break-word;
+  color: rgba(51, 212, 157, 1);
+  font-size: 3.2vw;
+  letter-spacing: 0.20000000298023224px;
+  font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 4vw;
+  margin: 22.4vw 3.73vw 0 0;
+}
+
+.image_6 {
+  position: absolute;
+  left: 3.74vw;
+  top: 16.27vw;
+  width: 26.14vw;
+  height: 9.07vw;
+}
+
+.box_61 {
+  width: 86.67vw;
+  margin: 5.33vw 6.66vw 0 1.33vw;
+}
+
+.text_14 {
+  height: 5.87vw;
+  overflow-wrap: break-word;
+  color: rgba(237, 242, 247, 1);
+  font-size: 4.8vw;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 5.6vw;
+}
+
+.label_9 {
+  width: 5.87vw;
+  height: 5.87vw;
+}
+
+.group_14 {
+  position: absolute;
+  left: 5.34vw;
+  top: 77.87vw;
+  width: 42.94vw;
+  height: 21.34vw;
+  background: url(./img/SketchPngc7e3aa598d2477c66e7af8b0a9cf85f9b1426e724b6a859092dd97a25dd1f97b.png)
+    100% no-repeat;
+  background-size: 100% 100%;
+  padding: 0.8vw 4.8vw 0.53vw 0;
+}
+
+.image_16 {
+  width: 20vw;
+  height: 20vw;
+}
+
+.text-group_91 {
+  margin: 4.8vw 0 4.8vw 0;
+}
+
+.text_19 {
+  overflow-wrap: break-word;
+  color: rgba(255, 255, 255, 1);
+  font-size: 3.73vw;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 5.34vw;
+  margin-right: 3.2vw;
+}
+
+.text_20 {
+  overflow-wrap: break-word;
+  color: rgba(134, 134, 134, 1);
+  font-size: 2.66vw;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 3.74vw;
+  margin-top: 1.34vw;
+}
+
+.group_23 {
+  background-color: rgba(22, 22, 22, 1);
+  margin: 194.13vw 0 0 -100vw;
+  padding: 4.26vw 13.33vw 2.13vw 13.6vw;
+}
+
+.list_15 {
+  width: 73.07vw;
+  height: 11.47vw;
+  justify-content: space-between;
+}
+
+.image-text_153 {
+  margin-right: 26.94vw;
+}
+
+.label_24 {
+  width: 6.4vw;
+  height: 6.4vw;
+}
+
+.text-group_36 {
+  overflow-wrap: break-word;
+  font-size: 2.66vw;
+  font-weight: NaN;
+  text-align: left;
+  white-space: nowrap;
+  line-height: 3.74vw;
+  align-self: center;
+  margin-top: 1.34vw;
+}
+
+.block_4 {
+  width: 35.74vw;
+  height: 1.34vw;
+  align-self: center;
+  margin-top: 3.2vw;
+}

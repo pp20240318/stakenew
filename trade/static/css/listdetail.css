@@ -1,0 +1,157 @@
+.myhead3 {
+    display: flex;
+    padding: 6px 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(12,17,45,.12549019607843137);
+    height: 32px;
+    background-color: #0c112d
+}
+
+.myhead3 .imgb {
+    width: 30%
+}
+
+.myhead3 .img1 {
+    height: 20px
+}
+
+.myhead3 .text1 {
+    color: #fff;
+    font-weight: 700;
+    width: 40%;
+    text-align: center
+}
+
+.myhead3 .text2 {
+    color: #fff;
+    width: 30%;
+    text-align: right
+}
+
+.robotPage {
+    background-color: #0c112d;
+    min-height: 100vh;
+    color: #fff
+}
+
+.robotPage .con1 .infoimg {
+    width: 100%
+}
+
+.robotPage .con1 .line1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px
+}
+
+.robotPage .con1 .line1 .text1 {
+    font-weight: 700
+}
+
+.robotPage .con1 .line2 {
+    padding: 10px 20px;
+    word-wrap: break-word
+}
+
+.robotPage .con1 .line3 {
+    color: #aaa;
+    font-size: 14px;
+    padding: 10px 20px
+}
+
+.robotPage .con1 .buttb {
+    text-align: center;
+    margin: 10px 0
+}
+
+.robotPage .con1 .buttb .butt {
+    display: inline-block;
+    padding: 12px 100px;
+    background-color: #8298ee;
+    border-radius: 50px;
+    font-size: 18px
+}
+
+.robotPage .dialog1 {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: fixed;
+    top: 20%;
+    left: calc(50% - 175px);
+    color: #333
+}
+
+.robotPage .dialog1 .heads {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd
+}
+
+.robotPage .dialog1 .heads .text1 {
+    width: 20%;
+    text-align: left;
+    margin-left: 10px
+}
+
+.robotPage .dialog1 .heads .text2 {
+    width: 60%;
+    color: #000;
+    text-align: center
+}
+
+.robotPage .dialog1 .heads .text3 {
+    width: 20%;
+    text-align: right
+}
+
+.robotPage .dialog1 .heads .text3 .img1 {
+    width: 20px;
+    margin-right: 10px
+}
+
+.robotPage .dialog1 .cons {
+    padding: 15px 20px
+}
+
+.robotPage .dialog1 .cons .line {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px
+}
+
+.robotPage .dialog1 .cons .line .textb {
+    text-align: center
+}
+
+.robotPage .dialog1 .cons .line .textb .text1 {
+    font-size: 12px;
+    color: #aaa;
+    margin-bottom: 5px
+}
+
+.robotPage .dialog1 .cons .line2 {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    background-color: rgba(130,152,238,.5333333333333333);
+    border-radius: 5px;
+    margin-top: 20px
+}
+
+.robotPage .dialog1 .cons .butt {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 50px;
+    color: #fff;
+    margin: 20px 0
+}
+
+.robotPage .dialog1 .cons .tip {
+    font-size: 12px;
+    color: #aaa
+}

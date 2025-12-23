@@ -1,0 +1,16 @@
+export default {
+    id: '公告ID',
+    title: '公告标题',
+    content: '公告内容',
+    cover_image: '封面图片',
+    status: '状态',
+    'status  0': '隐藏',
+    'status  1': '显示',
+    start_time: '开始显示时间（时间戳）',
+    end_time: '结束显示时间（时间戳）',
+    sort: '排序（数字越大越靠前）',
+    view_count: '浏览次数',
+    create_time: '创建时间',
+    update_time: '更新时间',
+    'quick Search Fields': '公告ID',
+}

@@ -1,0 +1,16 @@
+export default {
+    id: 'id',
+    title: 'title',
+    imgurl: 'imgurl',
+    sort: 'sort',
+    type: 'type',
+    'type 0': 'type 0',
+    'type 1': 'type 1',
+    content: 'content',
+    status: 'status',
+    'status 0': 'status 0',
+    'status 1': 'status 1',
+    update_time: 'update_time',
+    create_time: 'create_time',
+    'quick Search Fields': 'id',
+}

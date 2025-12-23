@@ -1,0 +1,127 @@
+.dilog-msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px
+}
+
+.robotPage {
+    background-color: #0c112d;
+    min-height: 100vh
+}
+
+.robotPage .title {
+    background-color: #02b2d6;
+    color: #fff;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 16px
+}
+
+.robotPage .lanb {
+    background-color: #0c112d;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.robotPage .lanb .img {
+    height: 25px;
+    vertical-align: middle
+}
+
+.robotPage .lanb .text1 {
+    width: 20px
+}
+
+.robotPage .lanb .text2 {
+    color: #fff;
+    font-size: 16px
+}
+
+.robotPage .con1 {
+    display: flex;
+    justify-content: space-around;
+    background-color: #253341;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 15px
+}
+
+.robotPage .con1 .textb {
+    text-align: center
+}
+
+.robotPage .con1 .textb .text1 {
+    color: #aaa;
+    font-size: 12px;
+    margin-bottom: 5px
+}
+
+.robotPage .con1 .textb .text2 {
+    color: #fff;
+    font-size: 16px
+}
+
+.robotPage .botlist {
+    width: 90%;
+    margin: auto
+}
+
+.robotPage .botlist .list {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    background: url(../../static/img/bg.818e3404.png) no-repeat 50%;
+    background-size: 100% 100%
+}
+
+.robotPage .botlist .list .left {
+    margin-right: 15px
+}
+
+.robotPage .botlist .list .left .img1 {
+    width: 80px
+}
+
+.robotPage .botlist .list .right {
+    position: relative;
+    width: 80%
+}
+
+.robotPage .botlist .list .right .text1 {
+    color: #fff
+}
+
+.robotPage .botlist .list .right .text2 {
+    color: #fff;
+    font-size: 12px;
+    margin: 10px 0
+}
+
+.robotPage .botlist .list .right .text3 {
+    color: #aaa
+}
+
+.robotPage .botlist .list .right .img2 {
+    width: 50px;
+    position: absolute;
+    top: -15px;
+    right: 0
+}
+
+.robotPage .botlist .list .right .img3 {
+    width: 80px;
+    position: absolute;
+    top: 10px;
+    right: -20px
+}
+
+.robotPage .botlist .active {
+    background: url(../../static/img/bg2.c987c2bb.png) no-repeat 50%;
+    background-size: 100% 100%
+}

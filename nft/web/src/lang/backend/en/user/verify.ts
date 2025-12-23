@@ -1,0 +1,22 @@
+export default {
+    id: 'id',
+    user_id: 'user_id',
+    user__username: 'username',
+    name: 'name',
+    certificate: 'certificate',
+    img_front: 'img_front',
+    img_back: 'img_back',
+    status: 'status',
+    'status opt0': 'status 0',
+    'status opt1': 'status opt1',
+    'status opt2': 'status opt2',
+    memo: 'memo',
+    create_time: 'create_time',
+    update_time: 'update_time',
+    'quick Search Fields': 'id',
+    examine:'examine',
+    examinePass:'examinePass',
+    examineFail:'examineFail',
+    'Are you sure to examine pass the selected record?':'Are you sure to examine pass the selected record?',
+    
+}

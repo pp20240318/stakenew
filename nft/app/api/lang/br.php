@@ -1,0 +1,52 @@
+<?php
+return [
+    'Invalid token'                                          => 'Token inválido!',
+    'Login expired, please login again.'                     => 'Login expirado, faça login novamente.',
+    'Account not exist'                                      => 'Conta não existe',
+    'Account disabled'                                       => 'Conta está desabilitada',
+    'Token login failed'                                     => 'Login do token falhou',
+    'Please try again after 1 day'                           => 'O número de tentativas de login falhadas excedeu o limite, tente novamente após 24 horas.',
+    'Password is incorrect'                                  => 'Senha incorreta',
+    'You are not logged in'                                  => 'Você não está logado.',
+    'Unknown operation'                                      => 'Operação desconhecida',
+    'No action available, please contact the administrator~' => 'Nenhuma ação disponível, entre em contato com o administrador~',
+    'Please login first'                                     => 'Por favor, faça login primeiro！',
+    'You have no permission'                                 => 'Sem permissão para operar！',
+    'Captcha error'                                          => 'Erro no captcha!',
+    
+    // Bot 相关翻译
+    'Missing user ID parameter'                              => 'Parâmetro de ID do usuário está faltando',
+    'Invalid user ID format'                                 => 'Formato de ID do usuário inválido',
+    'You have already started the bot today. Please try again tomorrow.' => 'Você já iniciou o bot hoje. Tente novamente amanhã.',
+    'User not found'                                         => 'Usuário não encontrado',
+    'Insufficient balance. Minimum balance required is 200 USDT' => 'Saldo insuficiente. Saldo mínimo necessário é 200 USDT',
+    'Bot is already running'                                 => 'Bot já está em execução',
+    'Failed to create bot record'                            => 'Falha ao criar registro do bot',
+    'Bot started successfully'                               => 'Bot iniciado com sucesso',
+    'No running bot found'                                   => 'Nenhum bot em execução encontrado',
+    'Bot stopped successfully'                               => 'Bot parado com sucesso',
+    'Insufficient holding'                                   => 'Posição insuficiente',
+    'Sell operation completed successfully'                  => 'Operação de venda concluída com sucesso',
+    'Invalid parameters'                                     => 'Parâmetros inválidos',
+    'Insufficient balance'                                   => 'Saldo insuficiente',
+    'Buy operation completed successfully'                   => 'Operação de compra concluída com sucesso',
+    
+    // User 控制器相关翻译
+    'not exist'                                              => 'Não existe',
+    'password error'                                         => 'Erro de senha',
+    'Login succeeded!'                                       => 'Login realizado com sucesso!',
+    'Invitation Code no found'                               => 'Código de convite não encontrado',
+    'Already Registered'                                     => 'Já registrado',
+    'Registration succeeded!'                                => 'Registro realizado com sucesso!',
+    
+    // 验证相关翻译
+    'username'                                               => 'nome de usuário',
+    'email'                                                  => 'e-mail',
+    'mobile'                                                 => 'celular',
+    'password'                                               => 'senha',
+    'captcha'                                                => 'captcha',
+    'captchaId'                                              => 'ID do captcha',
+    'Register type'                                          => 'Tipo de registro',
+    'Please input correct username'                          => 'Por favor, digite o nome de usuário correto',
+    'Please input correct password'                          => 'Por favor, digite a senha correta',
+];

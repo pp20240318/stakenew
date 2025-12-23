@@ -1,0 +1,158 @@
+.myhead3 {
+    display: flex;
+    padding: 6px 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(12,17,45,.12549019607843137);
+    height: 32px;
+    background-color: #0c112d
+}
+
+.myhead3 .imgb {
+    width: 30%
+}
+
+.myhead3 .img1 {
+    height: 20px
+}
+
+.myhead3 .text1 {
+    color: #fff;
+    font-weight: 700;
+    width: 40%;
+    text-align: center
+}
+
+.myhead3 .text2 {
+    color: #fff;
+    width: 30%;
+    text-align: right
+}
+
+.van-uploader__upload {
+    background: #dcdcdc
+}
+
+.van-uploader__upload-icon {
+    color: #fff
+}
+
+.img1b {
+    max-width: 45%
+}
+
+.img1b .img1 {
+    width: 100%;
+    max-height: 300px
+}
+
+#depositDetail {
+    background-color: #253341;
+    min-height: 100vh
+}
+
+#depositDetail .text1 {
+    color: #eee
+}
+
+.mgNo {
+    width: 130px
+}
+
+.bw_qccode {
+    display: flex;
+    justify-content: center
+}
+
+.bgAddress {
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.disList {
+    height: 40px;
+    align-items: center;
+    border-bottom: 1px solid #f4f4f4
+}
+
+.btncopy {
+    background: #02b2d6;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px 7px 5px 7px;
+    border-radius: 3px
+}
+
+.msg {
+    color: rgba(0,0,0,.54);
+    line-height: 20px;
+    font-size: 15px
+}
+
+.Take_btn {
+    width: 100%;
+    height: 45px;
+    background: #02b2d6;
+    color: #fff;
+    border-radius: 6px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 40px
+}
+
+.payment {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+    align-items: center;
+    background: #f0f0f0;
+    height: 45px;
+    border-radius: 6px;
+    margin-top: 20px
+}
+
+.whiteColor {
+    color: #02b2d6;
+    background: none
+}
+
+.seconds_time {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+
+.blackColor {
+    color: #fff;
+    background: #02b2d6
+}
+
+.seconds_time_btn {
+    border: 1px solid #02b2d6;
+    margin-top: 10px;
+    border-radius: 6px;
+    width: 31%;
+    font-size: 14px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center
+}
+
+.balance {
+    display: flex;
+    align-items: center
+}
+
+.deposit_content {
+    padding: 20px
+}
+
+.deposit_content_cntet {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}

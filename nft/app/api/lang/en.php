@@ -1,0 +1,52 @@
+<?php
+return [
+    'Invalid token'                                          => 'Invalid Token!',
+    'Login expired, please login again.'                     => 'Login expired, please login again.',
+    'Account not exist'                                      => 'Account does not exist',
+    'Account disabled'                                       => 'Account is disabled',
+    'Token login failed'                                     => 'Token login failed',
+    'Please try again after 1 day'                           => 'The number of failed login attempts has exceeded the limit, please try again after 24 hours.',
+    'Password is incorrect'                                  => 'Incorrect password',
+    'You are not logged in'                                  => 'You are not logged in.',
+    'Unknown operation'                                      => 'Unknown operation',
+    'No action available, please contact the administrator~' => 'There is no action available, please contact the administrator~',
+    'Please login first'                                     => 'Please login first！',
+    'You have no permission'                                 => 'No permission to operate！',
+    'Captcha error'                                          => 'Captcha error!',
+    
+    // Bot 相关翻译
+    'Missing user ID parameter'                              => 'Missing user ID parameter',
+    'Invalid user ID format'                                 => 'Invalid user ID format',
+    'You have already started the bot today. Please try again tomorrow.' => 'You have already started the bot today. Please try again tomorrow.',
+    'User not found'                                         => 'User not found',
+    'Insufficient balance. Minimum balance required is 200 USDT' => 'Insufficient balance. Minimum balance required is 200 USDT',
+    'Bot is already running'                                 => 'Bot is already running',
+    'Failed to create bot record'                            => 'Failed to create bot record',
+    'Bot started successfully'                               => 'Bot started successfully',
+    'No running bot found'                                   => 'No running bot found',
+    'Bot stopped successfully'                               => 'Bot stopped successfully',
+    'Insufficient holding'                                   => 'Insufficient holding',
+    'Sell operation completed successfully'                  => 'Sell operation completed successfully',
+    'Invalid parameters'                                     => 'Invalid parameters',
+    'Insufficient balance'                                   => 'Insufficient balance',
+    'Buy operation completed successfully'                   => 'Buy operation completed successfully',
+    
+    // User 控制器相关翻译
+    'not exist'                                              => 'Does not exist',
+    'password error'                                         => 'Password error',
+    'Login succeeded!'                                       => 'Login succeeded!',
+    'Invitation Code no found'                               => 'Invitation code not found',
+    'Already Registered'                                     => 'Already registered',
+    'Registration succeeded!'                                => 'Registration succeeded!',
+    
+    // 验证相关翻译
+    'username'                                               => 'Username',
+    'email'                                                  => 'Email',
+    'mobile'                                                 => 'Mobile',
+    'password'                                               => 'Password',
+    'captcha'                                                => 'Captcha',
+    'captchaId'                                              => 'Captcha ID',
+    'Register type'                                          => 'Register type',
+    'Please input correct username'                          => 'Please input correct username',
+    'Please input correct password'                          => 'Please input correct password',
+];

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="220" height="60" viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background rounded rectangle -->
+  <rect x="0" y="0" width="220" height="60" rx="8" fill="#40DFBF" />
+  
+  <!-- Trust Trade text -->
+  <text x="110" y="35" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">TRUST TRADE</text>
+  
+  <!-- Simple icon/symbol -->
+  <path d="M40,30 C40,20 50,20 50,30 L50,40 L60,40 L60,30 C60,15 30,15 30,30 L30,40 L40,40 Z" fill="white" />
+</svg> 
