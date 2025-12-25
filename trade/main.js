@@ -27,8 +27,8 @@ export function createApp() {
   app.config.globalProperties.qiniuak="5rmkM6MaAmb4wR059a6c2Im4aH-wKH5b8XJ79yfB";
   app.config.globalProperties.qiniusk="nPty7qhXr0537OJKYij-2J3OJl_VoqbQEBucf0ER";
   
-  app.config.globalProperties.siteBaseUrl = 'http://localhost:8088/api/';
-  app.config.globalProperties.H5BaseUrl = 'http://localhost:8088/';  
+  app.config.globalProperties.siteBaseUrl = 'http://localhost:8013/api/';
+  app.config.globalProperties.H5BaseUrl = 'http://localhost:8013/';  
 //   app.config.globalProperties.siteBaseUrl = 'https://stake.bobloot.live/api/';
 //    app.config.globalProperties.H5BaseUrl = 'https://stake.bobloot.live/';   
   app.config.globalProperties.$formatDate = function(timestamp, type = 1) {
